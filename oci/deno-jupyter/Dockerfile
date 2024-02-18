@@ -24,10 +24,10 @@ RUN apt-get update -y && \
     apt-get install -y unzip && \
     echo " >>>>>> OK INSTALL [unzip] COMPLETE " && \
     curl -fsSL https://deno.land/install.sh | sh && \
-    echo " >>>>>> OK INSTALL [DENO] COMPLETE " && \
-    pip install jupyterlab notebook && \
-    echo " >>>>>> OK INSTALL [pip install jupyterlab notebook] COMPLETE " && \
-    deno jupyter --unstable --install && \
+    echo " >>>>>> OK INSTALL [DENO] COMPLETE "
+RUN pip install jupyterlab notebook && \
+    echo " >>>>>> OK INSTALL [pip install jupyterlab notebook] COMPLETE "
+RUN deno jupyter --unstable --install && \
     echo " >>>>>> OK INSTALL [deno jupyter --unstable --install] COMPLETE "
 
 RUN mkdir -p $DATAVIZ_NOTEBOOKS_HOME

@@ -1,0 +1,28 @@
+{
+  "name": "poc-data-visualization",
+  "version": "1.0.0",
+  "description": "L'objectif de ce proof of concept, est de déterminer les meilleurs patterns et technologies, que nous pouvons utiliser, pour visualiser un ensemble de données, potentiellement important.",
+  "homepage": "https://github.com/decoder-leco/poc-data-visualization/blob/master/README.md",
+  "repository": {
+    "url": "https://github.com/decoder-leco/poc-data-visualization.git",
+    "type": "git"
+  },
+  "scripts": {
+    "db:mongo:samples": "bash -c 'chmod +x init/data/mongo/shell/initialize.sh && bash ./init/data/mongo/shell/initialize.sh'"
+  },
+  "keywords": [
+    "docker",
+    "jupyter",
+    "deno",
+    "typescript",
+    "d3",
+    "data",
+    "visualization",
+    "visualization",
+    "dataset",
+    "mongo",
+    "postgres"
+  ],
+  "author": "<Jean-Baptiste-Lasselle> https://github.com/Jean-Baptiste-Lasselle",
+  "license": "AGPL-3.0-only"
+}
