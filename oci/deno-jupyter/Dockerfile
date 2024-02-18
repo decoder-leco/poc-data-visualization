@@ -25,7 +25,7 @@ RUN apt-get update -y && \
     echo " >>>>>> OK INSTALL [unzip] COMPLETE " && \
     curl -fsSL https://deno.land/install.sh | sh && \
     echo " >>>>>> OK INSTALL [DENO] COMPLETE "
-RUN curl https://sh.rustup.rs -sSf | sh && \
+RUN curl https://sh.rustup.rs -sSf | sh -s -- -y && \
     echo " >>>>>> OK INSTALL [RUST +CARGO] COMPLETE "
 RUN pip install jupyterlab notebook && \
     echo " >>>>>> OK INSTALL [pip install jupyterlab notebook] COMPLETE "
