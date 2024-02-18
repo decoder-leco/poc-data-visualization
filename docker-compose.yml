@@ -21,6 +21,8 @@ services:
       args:
         DATAVIZ_NOTEBOOKS_HOME: /usr/dataviz/notebooks/decoderleco
     volumes:
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
       - $PWD/notebooks:/usr/dataviz/notebooks/decoderleco:rw
     restart: always
     stdin_open: true 
@@ -55,6 +57,8 @@ services:
       #      mongodb://mongo.dataviz_poc.io:27017/
       # --- 
     volumes:
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
       - dataviz_poc_mongo_data:/data/db
     networks:
       dataviz_poc_net:
