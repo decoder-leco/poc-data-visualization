@@ -10,6 +10,8 @@ docker-compose build jupyter_deno
 
 docker-compose up -d jupyter_deno
 
+docker-compose logs -f jupyter_deno
+
 ```
 
 ## Stack
