@@ -459,3 +459,62 @@ var display = {
 
 display
 ```
+
+
+* Là, voilà un exemple de composnat react écrit en pur typescript, qui fonctionne (mais les composants de react-icons, ça ne passe pas):
+
+```TypeScript
+import React, { useRef, useEffect } from 'npm:react';
+import ReactDOM from 'npm:react-dom/server';
+import { FaWeight, FaFortAwesome, FaSpaceAwesome } from "npm:react-icons/fa";
+
+
+export interface TestReactComponentProps {
+    name?: string
+    color?: string
+    size?: number
+    alt?: string
+    className?: string
+}
+export function TestReactComponent(props?: TestReactComponentProps) {
+  
+  return (
+    <>
+        <ul>
+          <li>
+              FaWeight
+          </li>
+          <li>
+              FaFortAwesome
+          </li>
+          <li>
+              FaSpaceAwesome
+          </li>
+        </ul>
+    </>
+  );
+};
+
+// https://docs.jupyter.org/en/latest/reference/mimetype.html
+const inspect = (obj: any) => {
+    
+    if (React.isValidElement(obj)) {
+        return {
+            [Symbol.for('Jupyter.display')]() {
+                return {
+                    'text/html': ReactDOM.renderToString(obj),
+                };
+            },
+        };
+    }
+    return obj
+};
+
+inspect(
+    <>
+        <em>Hi:</em>
+        <img src="https://api.iconify.design/fluent-emoji-flat/alarm-clock.svg" />
+        <TestReactComponent />
+    </>
+);
+```
