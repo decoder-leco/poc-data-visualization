@@ -16,4 +16,4 @@ deno jupyter --install --unstable-ffi
 
 # tested works # jupyter notebook --unstable true --ip 0.0.0.0 --allow-root
 export NOTEBOOKS_DIR=$DATAVIZ_NOTEBOOKS_HOME
-jupyter lab --unstable-ffi=true --ip=0.0.0.0 --allow-root --NotebookApp.token='decoderleco' --NotebookApp.password='decoderleco' --notebook-dir="$NOTEBOOKS_DIR"
+jupyter lab --unstable=true --ip=0.0.0.0 --allow-root --NotebookApp.token='decoderleco' --NotebookApp.password='decoderleco' --notebook-dir="$NOTEBOOKS_DIR"
