@@ -4,15 +4,17 @@ L'objectif de ce proof of concept, est de déterminer les meilleurs patterns et 
 
 ## Run locally
 
+* Execute this:
 ```bash
 
 docker-compose build jupyter_deno
 
 docker-compose up -d jupyter_deno
 
-docker-compose logs -f jupyter_deno
+# docker-compose logs -f jupyter_deno
 
 ```
+* go to http://localhost:8888/lab/ , and use `decoderleco` as the token to login
 
 ## Stack
 

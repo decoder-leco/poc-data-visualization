@@ -35,8 +35,6 @@ RUN apt-get install -y build-essential libssl-dev libffi-dev libzmq3-dev
 # >> reparations
 # RUN apt-get install -y build-essential libssl-dev libffi-dev libzmq3-dev && apt-get install -y --fix-broken
 RUN apt-get install -y build-essential libssl-dev libffi-dev libzmq3-dev
-# RUN apt-get install -y python3-dev
-RUN apt-get install -y libzmq3-dev musl-dev python3 python3-dev python3-zmq librust-zmq-dev
 
 # RUN export PATH="$PATH:$HOME/.cargo/bin" && export PIP_DEFAULT_TIMEOUT=200 && python --version && python -m pip install pyzmq --trusted-host pypi.org --trusted-host files.pythonhosted.org
 
