@@ -6,7 +6,7 @@
 #
 # https://hub.docker.com/layers/library/python/3.13.0a4-slim-bookworm/images/sha256-225ac4a4b47349833efc94d61b93c8784279341aff99e714f6ca455ca9232509?context=explore
 # ARG BASE_IMAGE=python:3.13.0a4-slim-bookworm
-ARG BASE_IMAGE=python:3.10-slim
+ARG BASE_IMAGE=decoderleco/deno-jupyter:0.0.1-alpha
 
 FROM $BASE_IMAGE as build
 

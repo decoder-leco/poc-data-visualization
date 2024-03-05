@@ -1,0 +1,1600 @@
+{
+ "name": "Décoder l'éco IT",
+ "type": "private_supergroup",
+ "id": 2102806436,
+ "messages": [
+  {
+   "id": -999994499,
+   "type": "service",
+   "date": "2024-02-18T13:52:07",
+   "date_unixtime": "1708260727",
+   "actor": "Jb Kritcek777",
+   "actor_id": "user5236069846",
+   "action": "create_group",
+   "title": "Décoder l'éco IT",
+   "members": [
+    "Jb Kritcek777",
+    "Boris"
+   ],
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": -999994493,
+   "type": "service",
+   "date": "2024-02-18T13:55:08",
+   "date_unixtime": "1708260908",
+   "actor": "Boris",
+   "actor_id": "user2041118954",
+   "action": "invite_members",
+   "members": [
+    "Pierre Décoder l'éco"
+   ],
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": -999994492,
+   "type": "service",
+   "date": "2024-02-18T13:56:33",
+   "date_unixtime": "1708260993",
+   "actor": "Boris",
+   "actor_id": "user2041118954",
+   "action": "invite_members",
+   "members": [
+    "Galicez"
+   ],
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": -999994491,
+   "type": "message",
+   "date": "2024-02-18T13:59:27",
+   "date_unixtime": "1708261167",
+   "from": "Jb Kritcek777",
+   "from_id": "user5236069846",
+   "text": [
+    "Bonjour Pierre :) ",
+    {
+     "type": "mention",
+     "text": "@decoder_l"
+    },
+    " :)\n\nNous sommes très heureux de travailler avec toi, et voici donc un groupe telegram pour décoder l'éco, nous l'avons intitulé ",
+    {
+     "type": "code",
+     "text": "\"Décoder l'éco IT\""
+    },
+    " , la mention ",
+    {
+     "type": "code",
+     "text": "IT"
+    },
+    " pour signifier qu'il s'agit ici en particulier du volet technologies\n\n",
+    {
+     "type": "mention_name",
+     "text": "Galicez",
+     "user_id": 1520951810
+    },
+    " c'est donc notre confrère féminine \n",
+    {
+     "type": "mention_name",
+     "text": "Boris",
+     "user_id": 2041118954
+    },
+    " est donc développeur frontend\net je suis jean-baptiste, :)"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Bonjour Pierre :) "
+    },
+    {
+     "type": "mention",
+     "text": "@decoder_l"
+    },
+    {
+     "type": "plain",
+     "text": " :)\n\nNous sommes très heureux de travailler avec toi, et voici donc un groupe telegram pour décoder l'éco, nous l'avons intitulé "
+    },
+    {
+     "type": "code",
+     "text": "\"Décoder l'éco IT\""
+    },
+    {
+     "type": "plain",
+     "text": " , la mention "
+    },
+    {
+     "type": "code",
+     "text": "IT"
+    },
+    {
+     "type": "plain",
+     "text": " pour signifier qu'il s'agit ici en particulier du volet technologies\n\n"
+    },
+    {
+     "type": "mention_name",
+     "text": "Galicez",
+     "user_id": 1520951810
+    },
+    {
+     "type": "plain",
+     "text": " c'est donc notre confrère féminine \n"
+    },
+    {
+     "type": "mention_name",
+     "text": "Boris",
+     "user_id": 2041118954
+    },
+    {
+     "type": "plain",
+     "text": " est donc développeur frontend\net je suis jean-baptiste, :)"
+    }
+   ]
+  },
+  {
+   "id": -999994490,
+   "type": "service",
+   "date": "2024-02-18T14:01:28",
+   "date_unixtime": "1708261288",
+   "actor": "Jb Kritcek777",
+   "actor_id": "user5236069846",
+   "action": "migrate_to_supergroup",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 1,
+   "type": "service",
+   "date": "2024-02-18T14:01:28",
+   "date_unixtime": "1708261288",
+   "actor": "Décoder l'éco IT",
+   "actor_id": "channel2102806436",
+   "action": "migrate_from_group",
+   "title": "Décoder l'éco IT",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 2,
+   "type": "service",
+   "date": "2024-02-18T14:05:17",
+   "date_unixtime": "1708261517",
+   "actor": "Jb Kritcek777",
+   "actor_id": "user5236069846",
+   "action": "topic_created",
+   "title": "Bienvenue",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 3,
+   "type": "message",
+   "date": "2024-02-18T14:05:17",
+   "date_unixtime": "1708261517",
+   "from": "Jb Kritcek777",
+   "from_id": "user5236069846",
+   "reply_to_message_id": 2,
+   "text": [
+    "Bienvenue ",
+    {
+     "type": "mention_name",
+     "text": "Galicez",
+     "user_id": 1520951810
+    },
+    " ",
+    {
+     "type": "mention_name",
+     "text": "Boris",
+     "user_id": 2041118954
+    },
+    " ",
+    {
+     "type": "mention",
+     "text": "@decoder_l"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Bienvenue "
+    },
+    {
+     "type": "mention_name",
+     "text": "Galicez",
+     "user_id": 1520951810
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "mention_name",
+     "text": "Boris",
+     "user_id": 2041118954
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "mention",
+     "text": "@decoder_l"
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "service",
+   "date": "2024-02-18T14:10:41",
+   "date_unixtime": "1708261841",
+   "actor": "Jb Kritcek777",
+   "actor_id": "user5236069846",
+   "action": "topic_created",
+   "title": "Infos de référence - FAQ",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 5,
+   "type": "message",
+   "date": "2024-02-18T14:10:41",
+   "date_unixtime": "1708261841",
+   "from": "Jb Kritcek777",
+   "from_id": "user5236069846",
+   "reply_to_message_id": 4,
+   "text": [
+    "Bonjour, dans ce fil d'informations, vous pourrez retrouvez toutes les infos pratiques de références:\n\n-> Liens vers les repository ",
+    {
+     "type": "link",
+     "text": "https://github.com"
+    },
+    " \n-> Qui contacter pour être ajouter dans un repo, pour modifier une Oauth2 app ",
+    {
+     "type": "bold",
+     "text": "Github"
+    },
+    " , travailler sur un robot telegram, pour obtenir des droits particuliers dans le cadre de votre travail, et bien d'autres sujets...\n-> Toutes les informations de références à notre collaboration seront répertoriées ici: cherchez une infos d'abord ici, avant de demander :)\n-> Une FAQ"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Bonjour, dans ce fil d'informations, vous pourrez retrouvez toutes les infos pratiques de références:\n\n-> Liens vers les repository "
+    },
+    {
+     "type": "link",
+     "text": "https://github.com"
+    },
+    {
+     "type": "plain",
+     "text": " \n-> Qui contacter pour être ajouter dans un repo, pour modifier une Oauth2 app "
+    },
+    {
+     "type": "bold",
+     "text": "Github"
+    },
+    {
+     "type": "plain",
+     "text": " , travailler sur un robot telegram, pour obtenir des droits particuliers dans le cadre de votre travail, et bien d'autres sujets...\n-> Toutes les informations de références à notre collaboration seront répertoriées ici: cherchez une infos d'abord ici, avant de demander :)\n-> Une FAQ"
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "type": "service",
+   "date": "2024-02-18T14:40:46",
+   "date_unixtime": "1708263646",
+   "actor": "Jb Kritcek777",
+   "actor_id": "user5236069846",
+   "action": "topic_created",
+   "title": "Annonces",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 7,
+   "type": "message",
+   "date": "2024-02-18T14:40:46",
+   "date_unixtime": "1708263646",
+   "from": "Jb Kritcek777",
+   "from_id": "user5236069846",
+   "reply_to_message_id": 6,
+   "text": "Bonjour!\n\nCe canal est dédié aux annonces destinées à toutes et tous!",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Bonjour!\n\nCe canal est dédié aux annonces destinées à toutes et tous!"
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "type": "message",
+   "date": "2024-02-18T14:47:00",
+   "date_unixtime": "1708264020",
+   "edited": "2024-02-18T14:47:51",
+   "edited_unixtime": "1708264071",
+   "from": "Jb Kritcek777",
+   "from_id": "user5236069846",
+   "reply_to_message_id": 6,
+   "photo": "(File not included. Change data exporting settings to download.)",
+   "width": 1280,
+   "height": 730,
+   "text": [
+    "Première annonce! Création d'une Organisation Github!\n\nJusqu'aujourd'hui, il existait une seul repository github sur lequel était publié le travail de \"Décoder l'éco\". Ce repository, ",
+    {
+     "type": "link",
+     "text": "https://github.com/decoderleco/deces_europe"
+    },
+    " , n'était pas inclus dans une  organisation Github, mais était simplement un des repository personnels de l'utilisateur Github de Pierre, ",
+    {
+     "type": "link",
+     "text": "https://github.com/decoderleco/deces_europe"
+    },
+    "\n\nNous avons créé une organisation Github, ",
+    {
+     "type": "link",
+     "text": "https://github.com/decoder-leco"
+    },
+    " , dont pierre ",
+    {
+     "type": "mention",
+     "text": "@decoder_l"
+    },
+    "  va devenir le \"owner\".\n\nAu cours de nos premiers échanges, nous exposerons à toutes et tous les bénéfices de travailler avec une organisation Github, plutôt qu'un simplement repository personnel.\n\nNous y avons d'ores et déjà aussi invité \"JeanGarf\" ",
+    {
+     "type": "mention",
+     "text": "@decoder_l"
+    },
+    " \n\n\n🚀🚀🚀"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Première annonce! Création d'une Organisation Github!\n\nJusqu'aujourd'hui, il existait une seul repository github sur lequel était publié le travail de \"Décoder l'éco\". Ce repository, "
+    },
+    {
+     "type": "link",
+     "text": "https://github.com/decoderleco/deces_europe"
+    },
+    {
+     "type": "plain",
+     "text": " , n'était pas inclus dans une  organisation Github, mais était simplement un des repository personnels de l'utilisateur Github de Pierre, "
+    },
+    {
+     "type": "link",
+     "text": "https://github.com/decoderleco/deces_europe"
+    },
+    {
+     "type": "plain",
+     "text": "\n\nNous avons créé une organisation Github, "
+    },
+    {
+     "type": "link",
+     "text": "https://github.com/decoder-leco"
+    },
+    {
+     "type": "plain",
+     "text": " , dont pierre "
+    },
+    {
+     "type": "mention",
+     "text": "@decoder_l"
+    },
+    {
+     "type": "plain",
+     "text": "  va devenir le \"owner\".\n\nAu cours de nos premiers échanges, nous exposerons à toutes et tous les bénéfices de travailler avec une organisation Github, plutôt qu'un simplement repository personnel.\n\nNous y avons d'ores et déjà aussi invité \"JeanGarf\" "
+    },
+    {
+     "type": "mention",
+     "text": "@decoder_l"
+    },
+    {
+     "type": "plain",
+     "text": " \n\n\n🚀🚀🚀"
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "type": "message",
+   "date": "2024-02-18T14:49:13",
+   "date_unixtime": "1708264153",
+   "edited": "2024-02-18T14:49:32",
+   "edited_unixtime": "1708264172",
+   "from": "Jb Kritcek777",
+   "from_id": "user5236069846",
+   "reply_to_message_id": 6,
+   "photo": "(File not included. Change data exporting settings to download.)",
+   "width": 1280,
+   "height": 710,
+   "text": "Pierre sera donc \"Owner\" de l'organisation, dès qu'il aura eu le temps d'accepter l'invitation Github",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Pierre sera donc \"Owner\" de l'organisation, dès qu'il aura eu le temps d'accepter l'invitation Github"
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "type": "service",
+   "date": "2024-02-18T15:12:50",
+   "date_unixtime": "1708265570",
+   "actor": "Jb Kritcek777",
+   "actor_id": "user5236069846",
+   "action": "topic_created",
+   "title": "Site documentaiton technique",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 11,
+   "type": "message",
+   "date": "2024-02-18T15:12:50",
+   "date_unixtime": "1708265570",
+   "from": "Jb Kritcek777",
+   "from_id": "user5236069846",
+   "reply_to_message_id": 10,
+   "text": [
+    "Bonjour, Ce canal servira aux discussions relatives au travail sur le site internet de documentation technique de la plateforme Décoder l'éco ",
+    {
+     "type": "link",
+     "text": "https://github.com/decoder-leco/docs"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Bonjour, Ce canal servira aux discussions relatives au travail sur le site internet de documentation technique de la plateforme Décoder l'éco "
+    },
+    {
+     "type": "link",
+     "text": "https://github.com/decoder-leco/docs"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "type": "message",
+   "date": "2024-02-18T15:14:06",
+   "date_unixtime": "1708265646",
+   "from": "Jb Kritcek777",
+   "from_id": "user5236069846",
+   "reply_to_message_id": 10,
+   "text": [
+    {
+     "type": "mention_name",
+     "text": "Boris",
+     "user_id": 2041118954
+    },
+    " à toi pour créer une première version de site à partir du thème, tous les détails dans ",
+    {
+     "type": "link",
+     "text": "https://github.com/decoder-leco/docs/issues/1"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "mention_name",
+     "text": "Boris",
+     "user_id": 2041118954
+    },
+    {
+     "type": "plain",
+     "text": " à toi pour créer une première version de site à partir du thème, tous les détails dans "
+    },
+    {
+     "type": "link",
+     "text": "https://github.com/decoder-leco/docs/issues/1"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "type": "service",
+   "date": "2024-02-18T15:14:58",
+   "date_unixtime": "1708265698",
+   "actor": "Jb Kritcek777",
+   "actor_id": "user5236069846",
+   "action": "topic_edit",
+   "new_title": "Site documentation technique",
+   "new_icon_emoji_id": 0,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 14,
+   "type": "message",
+   "date": "2024-02-18T15:15:49",
+   "date_unixtime": "1708265749",
+   "edited": "2024-02-18T16:11:53",
+   "edited_unixtime": "1708269113",
+   "from": "Jb Kritcek777",
+   "from_id": "user5236069846",
+   "reply_to_message_id": 6,
+   "photo": "(File not included. Change data exporting settings to download.)",
+   "width": 925,
+   "height": 837,
+   "text": [
+    "Site de documentation technique!\n\nNous venons de créer un nouveau repository Github consacré au code source du site internet de documentation technique, ",
+    {
+     "type": "link",
+     "text": "https://github.com/decoder-leco/docs"
+    },
+    "\n\nVous trouverez un nouveau canal de discussion dédié au travail sur cette nouvelle documentation"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Site de documentation technique!\n\nNous venons de créer un nouveau repository Github consacré au code source du site internet de documentation technique, "
+    },
+    {
+     "type": "link",
+     "text": "https://github.com/decoder-leco/docs"
+    },
+    {
+     "type": "plain",
+     "text": "\n\nVous trouverez un nouveau canal de discussion dédié au travail sur cette nouvelle documentation"
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "type": "message",
+   "date": "2024-02-18T16:22:10",
+   "date_unixtime": "1708269730",
+   "edited": "2024-02-18T22:41:13",
+   "edited_unixtime": "1708292473",
+   "from": "Jb Kritcek777",
+   "from_id": "user5236069846",
+   "reply_to_message_id": 4,
+   "text": [
+    "Github: \n\n-> Organisation Github : ",
+    {
+     "type": "link",
+     "text": "https://github.com/decoder-leco"
+    },
+    "\n-> Repositories: \n  - la ",
+    {
+     "type": "bold",
+     "text": "documentation technique de la plateforme"
+    },
+    " \"Décoder l'éco\" : ",
+    {
+     "type": "link",
+     "text": "https://github.com/decoder-leco/docs"
+    },
+    "\n  - ",
+    {
+     "type": "bold",
+     "text": "la plateforme de data engineering"
+    },
+    " \"Décoder l'éco\" : ",
+    {
+     "type": "link",
+     "text": "https://github.com/decoder-leco/plateforme"
+    },
+    "\n  - tout les ",
+    {
+     "type": "bold",
+     "text": "fichiers images"
+    },
+    " utilisées par l'ogranisation pour faire des logos, des bannières, etc... :  ",
+    {
+     "type": "link",
+     "text": "https://github.com/decoder-leco/images"
+    },
+    "\n  - quelques ",
+    {
+     "type": "bold",
+     "text": "datasets"
+    },
+    " avec lesquels l'on peut jouer au data engineer/data scientist, dans mongodb: ",
+    {
+     "type": "link",
+     "text": "https://github.com/decoder-leco/sample-datasets-letsplay"
+    },
+    "\n  - Un ",
+    {
+     "type": "bold",
+     "text": "Proof Of Concept"
+    },
+    " pour utiliser TypeScript dans un ",
+    {
+     "type": "bold",
+     "text": "notebook Jupyter/deno"
+    },
+    ", pour faire de la magie avec les plus puissants frameworks de ",
+    {
+     "type": "bold",
+     "text": "Data Visualization"
+    },
+    " de la planète javascript : ",
+    {
+     "type": "link",
+     "text": "https://github.com/decoder-leco/poc-data-visualization"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Github: \n\n-> Organisation Github : "
+    },
+    {
+     "type": "link",
+     "text": "https://github.com/decoder-leco"
+    },
+    {
+     "type": "plain",
+     "text": "\n-> Repositories: \n  - la "
+    },
+    {
+     "type": "bold",
+     "text": "documentation technique de la plateforme"
+    },
+    {
+     "type": "plain",
+     "text": " \"Décoder l'éco\" : "
+    },
+    {
+     "type": "link",
+     "text": "https://github.com/decoder-leco/docs"
+    },
+    {
+     "type": "plain",
+     "text": "\n  - "
+    },
+    {
+     "type": "bold",
+     "text": "la plateforme de data engineering"
+    },
+    {
+     "type": "plain",
+     "text": " \"Décoder l'éco\" : "
+    },
+    {
+     "type": "link",
+     "text": "https://github.com/decoder-leco/plateforme"
+    },
+    {
+     "type": "plain",
+     "text": "\n  - tout les "
+    },
+    {
+     "type": "bold",
+     "text": "fichiers images"
+    },
+    {
+     "type": "plain",
+     "text": " utilisées par l'ogranisation pour faire des logos, des bannières, etc... :  "
+    },
+    {
+     "type": "link",
+     "text": "https://github.com/decoder-leco/images"
+    },
+    {
+     "type": "plain",
+     "text": "\n  - quelques "
+    },
+    {
+     "type": "bold",
+     "text": "datasets"
+    },
+    {
+     "type": "plain",
+     "text": " avec lesquels l'on peut jouer au data engineer/data scientist, dans mongodb: "
+    },
+    {
+     "type": "link",
+     "text": "https://github.com/decoder-leco/sample-datasets-letsplay"
+    },
+    {
+     "type": "plain",
+     "text": "\n  - Un "
+    },
+    {
+     "type": "bold",
+     "text": "Proof Of Concept"
+    },
+    {
+     "type": "plain",
+     "text": " pour utiliser TypeScript dans un "
+    },
+    {
+     "type": "bold",
+     "text": "notebook Jupyter/deno"
+    },
+    {
+     "type": "plain",
+     "text": ", pour faire de la magie avec les plus puissants frameworks de "
+    },
+    {
+     "type": "bold",
+     "text": "Data Visualization"
+    },
+    {
+     "type": "plain",
+     "text": " de la planète javascript : "
+    },
+    {
+     "type": "link",
+     "text": "https://github.com/decoder-leco/poc-data-visualization"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "type": "service",
+   "date": "2024-02-18T16:24:17",
+   "date_unixtime": "1708269857",
+   "actor": "Jb Kritcek777",
+   "actor_id": "user5236069846",
+   "action": "topic_created",
+   "title": "Github",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 17,
+   "type": "message",
+   "date": "2024-02-18T16:24:18",
+   "date_unixtime": "1708269858",
+   "edited": "2024-02-18T17:01:03",
+   "edited_unixtime": "1708272063",
+   "from": "Jb Kritcek777",
+   "from_id": "user5236069846",
+   "reply_to_message_id": 16,
+   "text": "Bonjour, ici les Bots qui nous aident dans notre travail quotidien sur Github, nous enverront des notifications! (et nous leur parleront bientôt aussi! 🙂 )\n\n🚀🚀🚀",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Bonjour, ici les Bots qui nous aident dans notre travail quotidien sur Github, nous enverront des notifications! (et nous leur parleront bientôt aussi! 🙂 )\n\n🚀🚀🚀"
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "type": "service",
+   "date": "2024-02-18T16:25:54",
+   "date_unixtime": "1708269954",
+   "actor": "Jb Kritcek777",
+   "actor_id": "user5236069846",
+   "action": "topic_created",
+   "title": "Plateforme Data Engineering",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 19,
+   "type": "message",
+   "date": "2024-02-18T16:25:54",
+   "date_unixtime": "1708269954",
+   "from": "Jb Kritcek777",
+   "from_id": "user5236069846",
+   "reply_to_message_id": 18,
+   "text": [
+    "Bonjour, ce canal est fait pour les discussions de travail à propos de la plateforme de Data Engineering ",
+    {
+     "type": "link",
+     "text": "https://github.com/decoder-leco/plateforme"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Bonjour, ce canal est fait pour les discussions de travail à propos de la plateforme de Data Engineering "
+    },
+    {
+     "type": "link",
+     "text": "https://github.com/decoder-leco/plateforme"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 20,
+   "type": "service",
+   "date": "2024-02-18T16:42:57",
+   "date_unixtime": "1708270977",
+   "actor": "Jb Kritcek777",
+   "actor_id": "user5236069846",
+   "action": "edit_group_photo",
+   "photo": "(File not included. Change data exporting settings to download.)",
+   "width": 640,
+   "height": 640,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 21,
+   "type": "message",
+   "date": "2024-02-18T16:42:59",
+   "date_unixtime": "1708270979",
+   "edited": "2024-02-18T16:47:14",
+   "edited_unixtime": "1708271234",
+   "from": "Décoder l'éco IT",
+   "from_id": "channel2102806436",
+   "author": "SuperAdmin",
+   "reply_to_message_id": 2,
+   "text": "Salut à tous les 3 !\nJe suis dans le train pour Paris. Je devrai avoir le temps de regarder ça de plus près à partir de mardi. Merci beaucoup pour votre proposition,  je vais inviter Jean Garf!",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Salut à tous les 3 !\nJe suis dans le train pour Paris. Je devrai avoir le temps de regarder ça de plus près à partir de mardi. Merci beaucoup pour votre proposition,  je vais inviter Jean Garf!"
+    }
+   ]
+  },
+  {
+   "id": 22,
+   "type": "message",
+   "date": "2024-02-18T16:46:42",
+   "date_unixtime": "1708271202",
+   "edited": "2024-02-18T16:56:34",
+   "edited_unixtime": "1708271794",
+   "from": "Jb Kritcek777",
+   "from_id": "user5236069846",
+   "reply_to_message_id": 21,
+   "text": "Bienvenue Pierre! :D\n\nNous sommes tous hyper heureux de pouvoir contribuer à ton travail!!\n\nMerci!!!! \n\nNous serons tous les jours disponibles au mons pour une partie d'entre nous, et tous impatients de commencer !!!🥳🎉🥳🎉🎉🚀🚀🚀\n\nTrès bon retour à la maison, Reposes-toi bien!",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Bienvenue Pierre! :D\n\nNous sommes tous hyper heureux de pouvoir contribuer à ton travail!!\n\nMerci!!!! \n\nNous serons tous les jours disponibles au mons pour une partie d'entre nous, et tous impatients de commencer !!!🥳🎉🥳🎉🎉🚀🚀🚀\n\nTrès bon retour à la maison, Reposes-toi bien!"
+    }
+   ]
+  },
+  {
+   "id": 23,
+   "type": "message",
+   "date": "2024-02-18T16:53:40",
+   "date_unixtime": "1708271620",
+   "edited": "2024-02-18T16:54:46",
+   "edited_unixtime": "1708271686",
+   "from": "Décoder l'éco IT",
+   "from_id": "channel2102806436",
+   "author": "SuperAdmin",
+   "reply_to_message_id": 2,
+   "text": "J'habite Nantes, mais j'ai 2 interviews demain et une séance photo.",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "J'habite Nantes, mais j'ai 2 interviews demain et une séance photo."
+    }
+   ]
+  },
+  {
+   "id": 24,
+   "type": "message",
+   "date": "2024-02-18T17:00:12",
+   "date_unixtime": "1708272012",
+   "from": "Jb Kritcek777",
+   "from_id": "user5236069846",
+   "reply_to_message_id": 23,
+   "text": "😅Pardon, pourquoi Paris, correctif apporté, \n\nBon courage donc pour ce planning chargé encore demain, \n\nPrends bien le temps de te reposer, nous te préparons tout ce que nous pouvons en attendant!\n\n😁",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "😅Pardon, pourquoi Paris, correctif apporté, \n\nBon courage donc pour ce planning chargé encore demain, \n\nPrends bien le temps de te reposer, nous te préparons tout ce que nous pouvons en attendant!\n\n😁"
+    }
+   ]
+  },
+  {
+   "id": 25,
+   "type": "message",
+   "date": "2024-02-18T17:13:44",
+   "date_unixtime": "1708272824",
+   "edited": "2024-02-18T17:14:58",
+   "edited_unixtime": "1708272898",
+   "from": "Décoder l'éco IT",
+   "from_id": "channel2102806436",
+   "author": "SuperAdmin",
+   "reply_to_message_id": 2,
+   "text": "Votre document est super.\nDans mes projets, j'aime bien aussi envisager l'état final recherché (comme les militaires). Pour moi c'est un site d'information indépendant dont toutes les informations peuvent être tracées jusqu'à la source.\nSi on fait ce travail, c'est pour peser dans le débat public. Nos graphiques et analyses ont pour objectif d'alimenter les autres médias. \nCe qui n'empêche pas d'avoir celui directement issu de ces résultats.\nIl faut donc de jolis graphiques avec un petit logo identifiable, facilement trouvables et encapsulables dans n'importe quelle page web. Notre objectif étant qu'on les retrouverait un peu partout sur le web, je pense que c'est ça qu'on cherche.\nLa technique, la technologie, les langages, sont les outils permettant d'atteindre cet objectif.",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Votre document est super.\nDans mes projets, j'aime bien aussi envisager l'état final recherché (comme les militaires). Pour moi c'est un site d'information indépendant dont toutes les informations peuvent être tracées jusqu'à la source.\nSi on fait ce travail, c'est pour peser dans le débat public. Nos graphiques et analyses ont pour objectif d'alimenter les autres médias. \nCe qui n'empêche pas d'avoir celui directement issu de ces résultats.\nIl faut donc de jolis graphiques avec un petit logo identifiable, facilement trouvables et encapsulables dans n'importe quelle page web. Notre objectif étant qu'on les retrouverait un peu partout sur le web, je pense que c'est ça qu'on cherche.\nLa technique, la technologie, les langages, sont les outils permettant d'atteindre cet objectif."
+    }
+   ]
+  },
+  {
+   "id": 26,
+   "type": "message",
+   "date": "2024-02-18T17:15:36",
+   "date_unixtime": "1708272936",
+   "from": "Jb Kritcek777",
+   "from_id": "user5236069846",
+   "reply_to_message_id": 25,
+   "text": "Nous lisons attentivement toutes tes remarques. Nous préparerons nos éventuelles questions.",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Nous lisons attentivement toutes tes remarques. Nous préparerons nos éventuelles questions."
+    }
+   ]
+  },
+  {
+   "id": 28,
+   "type": "message",
+   "date": "2024-02-18T17:50:13",
+   "date_unixtime": "1708275013",
+   "from": "Jb Kritcek777",
+   "from_id": "user5236069846",
+   "reply_to_message_id": 10,
+   "text": [
+    {
+     "type": "mention_name",
+     "text": "Boris",
+     "user_id": 2041118954
+    },
+    " vu, pour tes permissions manquantes sur le repo github, je regardes de suite"
+   ],
+   "text_entities": [
+    {
+     "type": "mention_name",
+     "text": "Boris",
+     "user_id": 2041118954
+    },
+    {
+     "type": "plain",
+     "text": " vu, pour tes permissions manquantes sur le repo github, je regardes de suite"
+    }
+   ]
+  },
+  {
+   "id": 29,
+   "type": "message",
+   "date": "2024-02-18T17:50:56",
+   "date_unixtime": "1708275056",
+   "from": "Jb Kritcek777",
+   "from_id": "user5236069846",
+   "reply_to_message_id": 10,
+   "photo": "(File not included. Change data exporting settings to download.)",
+   "width": 1181,
+   "height": 314,
+   "text": [
+    {
+     "type": "mention_name",
+     "text": "Boris",
+     "user_id": 2041118954
+    },
+    " donc log de ton pb:"
+   ],
+   "text_entities": [
+    {
+     "type": "mention_name",
+     "text": "Boris",
+     "user_id": 2041118954
+    },
+    {
+     "type": "plain",
+     "text": " donc log de ton pb:"
+    }
+   ]
+  },
+  {
+   "id": 30,
+   "type": "message",
+   "date": "2024-02-18T17:51:54",
+   "date_unixtime": "1708275114",
+   "from": "Jb Kritcek777",
+   "from_id": "user5236069846",
+   "reply_to_message_id": 10,
+   "text": [
+    "ici ",
+    {
+     "type": "mention_name",
+     "text": "Boris",
+     "user_id": 2041118954
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "ici "
+    },
+    {
+     "type": "mention_name",
+     "text": "Boris",
+     "user_id": 2041118954
+    }
+   ]
+  },
+  {
+   "id": 31,
+   "type": "message",
+   "date": "2024-02-18T17:52:32",
+   "date_unixtime": "1708275152",
+   "from": "Boris",
+   "from_id": "user2041118954",
+   "reply_to_message_id": 10,
+   "text": "merci",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "merci"
+    }
+   ]
+  },
+  {
+   "id": 32,
+   "type": "message",
+   "date": "2024-02-18T17:54:15",
+   "date_unixtime": "1708275255",
+   "from": "Jb Kritcek777",
+   "from_id": "user5236069846",
+   "reply_to_message_id": 31,
+   "photo": "(File not included. Change data exporting settings to download.)",
+   "width": 1280,
+   "height": 591,
+   "text": "je pense que ce devrait être bon mnt",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "je pense que ce devrait être bon mnt"
+    }
+   ]
+  },
+  {
+   "id": 33,
+   "type": "message",
+   "date": "2024-02-18T17:55:13",
+   "date_unixtime": "1708275313",
+   "edited": "2024-02-18T17:55:19",
+   "edited_unixtime": "1708275319",
+   "from": "Boris",
+   "from_id": "user2041118954",
+   "reply_to_message_id": 32,
+   "text": "on est bon, c'est ok",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "on est bon, c'est ok"
+    }
+   ]
+  },
+  {
+   "id": 34,
+   "type": "message",
+   "date": "2024-02-18T19:24:53",
+   "date_unixtime": "1708280693",
+   "from": "Galicez",
+   "from_id": "user1520951810",
+   "reply_to_message_id": 3,
+   "text": "Merci!",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Merci!"
+    }
+   ]
+  },
+  {
+   "id": 35,
+   "type": "service",
+   "date": "2024-02-18T22:33:45",
+   "date_unixtime": "1708292025",
+   "actor": "Jb Kritcek777",
+   "actor_id": "user5236069846",
+   "action": "topic_created",
+   "title": "POC - data visualization",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 36,
+   "type": "message",
+   "date": "2024-02-18T22:33:45",
+   "date_unixtime": "1708292025",
+   "from": "Jb Kritcek777",
+   "from_id": "user5236069846",
+   "reply_to_message_id": 35,
+   "text": [
+    "Bonjour, sur ce channel, nous aurons les discussions qui concernent un PRoof Of Concept technique, effectué dans le repository ",
+    {
+     "type": "link",
+     "text": "https://github.com/decoder-leco/poc-data-visualization"
+    },
+    "\n\nBut du POC: \n\nConcevoir des notebook Jupyter en Typescript, sur une base ",
+    {
+     "type": "code",
+     "text": "deno"
+    },
+    ", pour bénéficier de nombreuses bibliothèques excellentes de data visualisation, comme : \n\n    * [D3.js](",
+    {
+     "type": "link",
+     "text": "https://github.com/d3/d3"
+    },
+    ")\n    * [Observable Plot](",
+    {
+     "type": "link",
+     "text": "https://github.com/observablehq/plot"
+    },
+    ")\n    * [Polars](",
+    {
+     "type": "link",
+     "text": "https://github.com/pola-rs/nodejs-polars"
+    },
+    ")\n    * [Skia Canvas](",
+    {
+     "type": "link",
+     "text": "https://github.com/samizdatco/skia-canvas"
+    },
+    ")\n    * [Display JS](",
+    {
+     "type": "link",
+     "text": "https://deno.land/x/display@v0.1.1/mod.ts"
+    },
+    ")"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Bonjour, sur ce channel, nous aurons les discussions qui concernent un PRoof Of Concept technique, effectué dans le repository "
+    },
+    {
+     "type": "link",
+     "text": "https://github.com/decoder-leco/poc-data-visualization"
+    },
+    {
+     "type": "plain",
+     "text": "\n\nBut du POC: \n\nConcevoir des notebook Jupyter en Typescript, sur une base "
+    },
+    {
+     "type": "code",
+     "text": "deno"
+    },
+    {
+     "type": "plain",
+     "text": ", pour bénéficier de nombreuses bibliothèques excellentes de data visualisation, comme : \n\n    * [D3.js]("
+    },
+    {
+     "type": "link",
+     "text": "https://github.com/d3/d3"
+    },
+    {
+     "type": "plain",
+     "text": ")\n    * [Observable Plot]("
+    },
+    {
+     "type": "link",
+     "text": "https://github.com/observablehq/plot"
+    },
+    {
+     "type": "plain",
+     "text": ")\n    * [Polars]("
+    },
+    {
+     "type": "link",
+     "text": "https://github.com/pola-rs/nodejs-polars"
+    },
+    {
+     "type": "plain",
+     "text": ")\n    * [Skia Canvas]("
+    },
+    {
+     "type": "link",
+     "text": "https://github.com/samizdatco/skia-canvas"
+    },
+    {
+     "type": "plain",
+     "text": ")\n    * [Display JS]("
+    },
+    {
+     "type": "link",
+     "text": "https://deno.land/x/display@v0.1.1/mod.ts"
+    },
+    {
+     "type": "plain",
+     "text": ")"
+    }
+   ]
+  },
+  {
+   "id": 37,
+   "type": "message",
+   "date": "2024-02-18T22:36:02",
+   "date_unixtime": "1708292162",
+   "from": "Jb Kritcek777",
+   "from_id": "user5236069846",
+   "reply_to_message_id": 35,
+   "text": [
+    {
+     "type": "mention_name",
+     "text": "Boris",
+     "user_id": 2041118954
+    },
+    " je pens en particulier à toi pour que tu puisses utiliser TypeScript dans un notebook, au lieu de R ou Python\n\n* mon but : te construire un docker-compose avec ton notebook jupyter tout prêt à l'emploi\n\n* là où j'en suis : \n  - ",
+    {
+     "type": "link",
+     "text": "https://github.com/decoder-leco/poc-data-visualization/tree/feature/container/image/deno/jupyter"
+    },
+    "\n  - ",
+    {
+     "type": "link",
+     "text": "https://github.com/decoder-leco/poc-data-visualization/issues/1"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "mention_name",
+     "text": "Boris",
+     "user_id": 2041118954
+    },
+    {
+     "type": "plain",
+     "text": " je pens en particulier à toi pour que tu puisses utiliser TypeScript dans un notebook, au lieu de R ou Python\n\n* mon but : te construire un docker-compose avec ton notebook jupyter tout prêt à l'emploi\n\n* là où j'en suis : \n  - "
+    },
+    {
+     "type": "link",
+     "text": "https://github.com/decoder-leco/poc-data-visualization/tree/feature/container/image/deno/jupyter"
+    },
+    {
+     "type": "plain",
+     "text": "\n  - "
+    },
+    {
+     "type": "link",
+     "text": "https://github.com/decoder-leco/poc-data-visualization/issues/1"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 38,
+   "type": "message",
+   "date": "2024-02-19T04:31:30",
+   "date_unixtime": "1708313490",
+   "from": "Jb Kritcek777",
+   "from_id": "user5236069846",
+   "reply_to_message_id": 35,
+   "photo": "(File not included. Change data exporting settings to download.)",
+   "width": 1280,
+   "height": 578,
+   "text": [
+    "ok j'ai une image qui fonctionne, on va pouvoir expérimenter en TypeScript :) ",
+    {
+     "type": "mention",
+     "text": "@Boris"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "ok j'ai une image qui fonctionne, on va pouvoir expérimenter en TypeScript :) "
+    },
+    {
+     "type": "mention",
+     "text": "@Boris"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 39,
+   "type": "message",
+   "date": "2024-02-19T04:32:15",
+   "date_unixtime": "1708313535",
+   "from": "Jb Kritcek777",
+   "from_id": "user5236069846",
+   "reply_to_message_id": 35,
+   "text": [
+    {
+     "type": "mention_name",
+     "text": "Boris",
+     "user_id": 2041118954
+    },
+    " Il me restera à nettoyer le code et le repo, je te fais signe quand tu pourras utiliser ça pour expérimenter :)"
+   ],
+   "text_entities": [
+    {
+     "type": "mention_name",
+     "text": "Boris",
+     "user_id": 2041118954
+    },
+    {
+     "type": "plain",
+     "text": " Il me restera à nettoyer le code et le repo, je te fais signe quand tu pourras utiliser ça pour expérimenter :)"
+    }
+   ]
+  },
+  {
+   "id": 40,
+   "type": "message",
+   "date": "2024-02-19T09:31:48",
+   "date_unixtime": "1708331508",
+   "from": "Boris",
+   "from_id": "user2041118954",
+   "reply_to_message_id": 35,
+   "photo": "(File not included. Change data exporting settings to download.)",
+   "width": 461,
+   "height": 689,
+   "text": [
+    "Bonjour ",
+    {
+     "type": "mention_name",
+     "text": "Jb",
+     "user_id": 5236069846
+    },
+    ", j'aurais besoin de ton aide, j'ai cloné ",
+    {
+     "type": "code",
+     "text": "https://github.com/decoder-leco/poc-data-visualization/tree/feature/container/image/deno/jupyter"
+    },
+    ", l'ai lancé & tout semble fonctionner.\ncependant, je suis arrété par le login sur ",
+    {
+     "type": "code",
+     "text": "http://localhost:8888/"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Bonjour "
+    },
+    {
+     "type": "mention_name",
+     "text": "Jb",
+     "user_id": 5236069846
+    },
+    {
+     "type": "plain",
+     "text": ", j'aurais besoin de ton aide, j'ai cloné "
+    },
+    {
+     "type": "code",
+     "text": "https://github.com/decoder-leco/poc-data-visualization/tree/feature/container/image/deno/jupyter"
+    },
+    {
+     "type": "plain",
+     "text": ", l'ai lancé & tout semble fonctionner.\ncependant, je suis arrété par le login sur "
+    },
+    {
+     "type": "code",
+     "text": "http://localhost:8888/"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 41,
+   "type": "message",
+   "date": "2024-02-19T09:33:15",
+   "date_unixtime": "1708331595",
+   "from": "Boris",
+   "from_id": "user2041118954",
+   "reply_to_message_id": 35,
+   "photo": "(File not included. Change data exporting settings to download.)",
+   "width": 1280,
+   "height": 406,
+   "text": [
+    "j'ai bien essayer de lancer leur cmd ",
+    {
+     "type": "code",
+     "text": "jupyter server list"
+    },
+    " mais j'suis pas encore à l'aise avec docker"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "j'ai bien essayer de lancer leur cmd "
+    },
+    {
+     "type": "code",
+     "text": "jupyter server list"
+    },
+    {
+     "type": "plain",
+     "text": " mais j'suis pas encore à l'aise avec docker"
+    }
+   ]
+  },
+  {
+   "id": 42,
+   "type": "message",
+   "date": "2024-02-19T18:46:07",
+   "date_unixtime": "1708364767",
+   "from": "Jb Kritcek777",
+   "from_id": "user5236069846",
+   "reply_to_message_id": 41,
+   "text": [
+    ":) Bonsoir ",
+    {
+     "type": "mention_name",
+     "text": "Boris",
+     "user_id": 2041118954
+    },
+    " \n\nAlors, d'abord tu as réussi à lancer le notebook, étant donné que tu en arrives à la page où on te dit qu'il te faut un token. Je vais te guider à partir de là.\n\nOk, donc : \n* pour lancer ton notebook, il te faut exécuter:\n\n",
+    {
+     "type": "pre",
+     "text": "docker-compose up -d",
+     "language": "shell"
+    },
+    "\n\n*  ça , tu as réussit à le faire.\n* une fois que le tout est démarré, tu as aussi tout seul trouvé comment accéder à l'application dans ton navigateur, par l'URL ",
+    {
+     "type": "code",
+     "text": "http://<soit un hostname soit l'adresse IP de ton pc>:8888/"
+    },
+    "\n\n* Bien, arrivé à ce point, tu vas devoir exécuter une commande, pour pouvoir avoir ton fameux token, cette commande:\n\n",
+    {
+     "type": "pre",
+     "text": "export TON_FAMEUX_TOKEN=$(docker-compose logs jupyter_deno | grep token | grep tree | head -n 1 | awk -F 'token=' '{ print $NF }' | tr -d \"\\n\\r\")\n\necho \"TON_FAMEUX_TOKEN vaut [${TON_FAMEUX_TOKEN}]\"\n\necho \" maintenant va à http://localhost:8888/tree?token=${TON_FAMEUX_TOKEN} :) \"",
+     "language": "shell"
+    },
+    "\n\n* et puis tu n'as plus qu'à aller à l'URL"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": ":) Bonsoir "
+    },
+    {
+     "type": "mention_name",
+     "text": "Boris",
+     "user_id": 2041118954
+    },
+    {
+     "type": "plain",
+     "text": " \n\nAlors, d'abord tu as réussi à lancer le notebook, étant donné que tu en arrives à la page où on te dit qu'il te faut un token. Je vais te guider à partir de là.\n\nOk, donc : \n* pour lancer ton notebook, il te faut exécuter:\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "docker-compose up -d",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n*  ça , tu as réussit à le faire.\n* une fois que le tout est démarré, tu as aussi tout seul trouvé comment accéder à l'application dans ton navigateur, par l'URL "
+    },
+    {
+     "type": "code",
+     "text": "http://<soit un hostname soit l'adresse IP de ton pc>:8888/"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n* Bien, arrivé à ce point, tu vas devoir exécuter une commande, pour pouvoir avoir ton fameux token, cette commande:\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "export TON_FAMEUX_TOKEN=$(docker-compose logs jupyter_deno | grep token | grep tree | head -n 1 | awk -F 'token=' '{ print $NF }' | tr -d \"\\n\\r\")\n\necho \"TON_FAMEUX_TOKEN vaut [${TON_FAMEUX_TOKEN}]\"\n\necho \" maintenant va à http://localhost:8888/tree?token=${TON_FAMEUX_TOKEN} :) \"",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n* et puis tu n'as plus qu'à aller à l'URL"
+    }
+   ]
+  },
+  {
+   "id": 43,
+   "type": "message",
+   "date": "2024-02-19T18:53:16",
+   "date_unixtime": "1708365196",
+   "from": "Jb Kritcek777",
+   "from_id": "user5236069846",
+   "reply_to_message_id": 35,
+   "text": [
+    {
+     "type": "pre",
+     "text": "{\n  [Symbol.for(\"Jupyter.display\")]() {\n    return {\n      // Plain text content\n      \"text/plain\": \"Hello world!\",\n\n      // HTML output\n      \"text/html\": \"<h1>Hello world!</h1>\",\n    }\n  }\n}",
+     "language": "javascript"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "pre",
+     "text": "{\n  [Symbol.for(\"Jupyter.display\")]() {\n    return {\n      // Plain text content\n      \"text/plain\": \"Hello world!\",\n\n      // HTML output\n      \"text/html\": \"<h1>Hello world!</h1>\",\n    }\n  }\n}",
+     "language": "javascript"
+    }
+   ]
+  },
+  {
+   "id": 44,
+   "type": "message",
+   "date": "2024-02-19T18:53:42",
+   "date_unixtime": "1708365222",
+   "from": "Jb Kritcek777",
+   "from_id": "user5236069846",
+   "reply_to_message_id": 35,
+   "photo": "(File not included. Change data exporting settings to download.)",
+   "width": 1280,
+   "height": 335,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 45,
+   "type": "message",
+   "date": "2024-02-19T18:56:19",
+   "date_unixtime": "1708365379",
+   "from": "Boris",
+   "from_id": "user2041118954",
+   "reply_to_message_id": 35,
+   "photo": "(File not included. Change data exporting settings to download.)",
+   "width": 928,
+   "height": 403,
+   "text": "Nickel ! 👍",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Nickel ! 👍"
+    }
+   ]
+  },
+  {
+   "id": 46,
+   "type": "message",
+   "date": "2024-02-19T19:05:26",
+   "date_unixtime": "1708365926",
+   "from": "Jb Kritcek777",
+   "from_id": "user5236069846",
+   "reply_to_message_id": 35,
+   "text": [
+    {
+     "type": "pre",
+     "text": "import React from 'npm:react';\nimport ReactDOM from 'npm:react-dom/server';\n\n// https://docs.jupyter.org/en/latest/reference/mimetype.html\nconst inspect = (obj: any) => {\n    if (React.isValidElement(obj)) {\n        return {\n            [Symbol.for('Jupyter.display')]() {\n                return {\n                    'text/html': ReactDOM.renderToString(obj),\n                };\n            },\n        };\n    }\n    return obj\n};\n\ninspect(\n    <>\n        <em>Hi:</em>\n        <img src=\"https://api.iconify.design/fluent-emoji-flat/alarm-clock.svg\" />\n    </>\n);",
+     "language": "typescript"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "pre",
+     "text": "import React from 'npm:react';\nimport ReactDOM from 'npm:react-dom/server';\n\n// https://docs.jupyter.org/en/latest/reference/mimetype.html\nconst inspect = (obj: any) => {\n    if (React.isValidElement(obj)) {\n        return {\n            [Symbol.for('Jupyter.display')]() {\n                return {\n                    'text/html': ReactDOM.renderToString(obj),\n                };\n            },\n        };\n    }\n    return obj\n};\n\ninspect(\n    <>\n        <em>Hi:</em>\n        <img src=\"https://api.iconify.design/fluent-emoji-flat/alarm-clock.svg\" />\n    </>\n);",
+     "language": "typescript"
+    }
+   ]
+  },
+  {
+   "id": 47,
+   "type": "message",
+   "date": "2024-02-19T19:06:41",
+   "date_unixtime": "1708366001",
+   "from": "Boris",
+   "from_id": "user2041118954",
+   "reply_to_message_id": 46,
+   "photo": "(File not included. Change data exporting settings to download.)",
+   "width": 1008,
+   "height": 510,
+   "text": "it works",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "it works"
+    }
+   ]
+  }
+ ]
+}
