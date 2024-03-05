@@ -14,8 +14,8 @@ services:
 #       - dataviz_poc_net
 
   jupyter_deno_rise:
+    image: decoderleco/deno-jupyter-rise:0.0.1-alpha
     build:
-      image: decoderleco/deno-jupyter-rise:0.0.1-alpha
       context: ./oci/deno-jupyter/
       dockerfile: rise.Dockerfile
       # dockerfile: prod.Dockerfile
@@ -40,8 +40,8 @@ services:
     depends_on:
       - mongodb
   jupyter_deno:
+    image: decoderleco/deno-jupyter:0.0.1-alpha
     build:
-      image: decoderleco/deno-jupyter:0.0.1-alpha
       context: ./oci/deno-jupyter/
       dockerfile: Dockerfile
       # dockerfile: prod.Dockerfile
