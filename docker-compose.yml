@@ -51,7 +51,7 @@ services:
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
       - $PWD/notebooks:/usr/dataviz/notebooks/decoderleco:rw
-      - jupyter_deno_cache:/root/.cache/deno
+      - jupyter_deno_cache:/root/.cache/deno:rw
     restart: always
     stdin_open: true 
     tty: true
