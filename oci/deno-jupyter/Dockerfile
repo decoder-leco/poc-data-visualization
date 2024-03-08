@@ -69,4 +69,5 @@ RUN chmod +x ./start.sh && mv ./start.sh /run
 WORKDIR /usr/dataviz/notebooks/decoderleco
 EXPOSE 8888
 # CMD [ "jupyter", "notebook", "--unstable" ]
-CMD [ "/run/start.sh" ]
+# CMD [ "/run/start.sh" ]
+CMD [ "/run/start.debug.sh" ]
