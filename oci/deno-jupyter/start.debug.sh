@@ -9,8 +9,9 @@ cargo --version
 
 
 deno --version
-deno jupyter --install --unstable-ffi --allow-ffi --allow-env
-
+# KO # deno jupyter --install --unstable-ffi --allow-ffi --allow-env
+deno jupyter --install --unstable-ffi --allow-env
+# deno jupyter --install --unstable-ffi
 
 
 
