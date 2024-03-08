@@ -70,4 +70,4 @@ WORKDIR /usr/dataviz/notebooks/decoderleco
 EXPOSE 8888
 # CMD [ "jupyter", "notebook", "--unstable" ]
 # CMD [ "/run/start.sh" ]
-CMD [ "/run/start.debug.sh" ]
+CMD [ "/run/start.sh" ]
