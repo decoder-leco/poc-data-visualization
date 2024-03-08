@@ -10,7 +10,8 @@ cargo --version
 
 deno --version
 # KO # deno jupyter --install --unstable-ffi --allow-ffi --allow-env
-deno jupyter --install --unstable-ffi --allow-env
+# KO # deno jupyter --install --unstable-ffi --allow-env
+deno jupyter --install --unstable-ffi --unstable --unstable-fs --unstable-worker-options
 # deno jupyter --install --unstable-ffi
 
 # tested works # jupyter notebook --unstable true --ip 0.0.0.0 --allow-root
