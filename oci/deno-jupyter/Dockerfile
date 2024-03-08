@@ -64,6 +64,10 @@ RUN mkdir -p /run
 COPY start.sh .
 RUN chmod +x ./start.sh && mv ./start.sh /run
 
+COPY start.debug.sh .
+RUN chmod +x ./start.debug.sh && mv ./start.debug.sh /run
+
+
 # CMD [ "jupyter", "notebook" ]
 
 WORKDIR /usr/dataviz/notebooks/decoderleco
