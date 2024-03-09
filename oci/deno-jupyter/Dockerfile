@@ -56,7 +56,7 @@ RUN bash -c 'source ~/.bashrc && deno jupyter --unstable --install' && \
 RUN mkdir -p $DATAVIZ_NOTEBOOKS_HOME
 
 
-FROM build as runner
+FROM build as deno_runner
 
 RUN mkdir -p /run
 
@@ -75,3 +75,15 @@ EXPOSE 8888
 
 # CMD [ "/run/start.sh" ]
 CMD [ "/run/start.debug.sh" ]
+
+
+FROM deno_runner as add_r_kernel
+
+RUN mkdir -p /kernels/extras/ && mkdir -p /kernels/ops/ 
+
+WORKDIR /kernels/ops/
+COPY add-rlang-kernel.sh .
+RUN chmod +x ./add-rlang-kernel.sh && ./add-rlang-kernel.sh
+
+
+WORKDIR /usr/dataviz/notebooks/decoderleco
