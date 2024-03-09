@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source ~/.bashrc
+
 # see https://irkernel.github.io/installation/
 
 echo 'options(repos = c(CRAN = "https://cloud.r-project.org"))' > ~/.Rprofile
