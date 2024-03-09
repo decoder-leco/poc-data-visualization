@@ -62,4 +62,5 @@ conda install --help
 # > https://github.com/IRkernel/IRkernel : in the requirements, that the R language platform is installed
 # 
 
-echo 'y\n' | conda install -c r r-irkernel
+# echo 'y\n' | conda install -c r r-irkernel
+echo 'y' | conda install -c r r-irkernel
