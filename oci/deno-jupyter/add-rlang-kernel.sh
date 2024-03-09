@@ -63,4 +63,5 @@ conda install --help
 # 
 
 # echo 'y\n' | conda install -c r r-irkernel
-echo 'y' | conda install -c r r-irkernel
+# echo 'y' | conda install -c r r-irkernel
+conda install -y -c r r-irkernel
