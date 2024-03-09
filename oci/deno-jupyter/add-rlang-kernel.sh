@@ -35,15 +35,16 @@ export CONDA_INSTALLER_CHECKSUM_SHA256="b978856ec3c826eb495b60e3fffe621f670c1011
 echo "${CONDA_INSTALLER_CHECKSUM_SHA256} ${CONDA_INSTALLER_FILENAME}" | ./conda.sha256.checksum
 sha256sum -c ./conda.sha256.checksum
 # https://stackoverflow.com/questions/49865531/bash-script-for-anaconda-installer-and-license-agreement
+mkdir -p $HOME/anaconda3
 bash ${CONDA_INSTALLER_FILENAME} -b -f -p $HOME/anaconda3
-
+export PATH=$PATH:$HOME/anaconda3
 conda --version
 which conda
 echo "# -----------"
 echo " Content of bashrc after conda installation:"
 cat ~/.bashrc
 echo "# -----------"
-echo "export PATH=\"\$PATH:$(which conda)\"" | tee -a ~/.bashrc
+echo "export PATH=\"\$PATH:\$(which conda)\"" | tee -a ~/.bashrc
 echo " Content of bashrc after conda installation + update:"
 cat ~/.bashrc
 echo "# -----------"
