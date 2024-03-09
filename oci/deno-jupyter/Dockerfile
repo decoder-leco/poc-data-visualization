@@ -84,6 +84,6 @@ RUN mkdir -p /kernels/extras/ && mkdir -p /kernels/ops/
 WORKDIR /kernels/ops/
 COPY add-rlang-kernel.sh .
 RUN chmod +x ./add-rlang-kernel.sh && ./add-rlang-kernel.sh
-
+RUN RUN bash -c ''
 
 WORKDIR /usr/dataviz/notebooks/decoderleco
