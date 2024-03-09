@@ -85,7 +85,7 @@ WORKDIR /kernels/ops/
 COPY add-rlang-kernel.sh .
 RUN chmod +x ./add-rlang-kernel.sh && ./add-rlang-kernel.sh
 RUN bash -c 'echo "in docker build, check conda install:" && source ~/.bashrc && conda --version && Rscript --version && R --version'
-COPY add-rlang-kernel.sh .
+COPY ./register.r.ikernel.sh .
 RUN chmod +x ./register.r.ikernel.sh && ./register.r.ikernel.sh
 
 WORKDIR /usr/dataviz/notebooks/decoderleco
