@@ -38,6 +38,9 @@ sha256sum -c ./conda.sha256.checksum
 mkdir -p $HOME/anaconda3
 bash ${CONDA_INSTALLER_FILENAME} -b -f -p $HOME/anaconda3
 export PATH=$PATH:$HOME/anaconda3
+export "After conda installation, content of [$HOME/anaconda3]"
+ls -alh $HOME/anaconda3
+alias $HOME/anaconda3/anaconda
 conda --version
 which conda
 echo "# -----------"
@@ -49,8 +52,11 @@ echo " Content of bashrc after conda installation + update:"
 cat ~/.bashrc
 echo "# -----------"
 conda --version
+echo "# -----------"
+conda install --help
 # ----
 # Install the R language and its jupyter kernel
 # > https://github.com/IRkernel/IRkernel : in the requirements, that the R language platform is installed
 # 
+
 echo 'y\n' | conda install -c r r-irkernel
