@@ -37,10 +37,13 @@ sha256sum -c ./conda.sha256.checksum
 # https://stackoverflow.com/questions/49865531/bash-script-for-anaconda-installer-and-license-agreement
 mkdir -p $HOME/anaconda3
 bash ${CONDA_INSTALLER_FILENAME} -b -f -p $HOME/anaconda3
-export PATH=$PATH:$HOME/anaconda3
-export "After conda installation, content of [$HOME/anaconda3]"
+export PATH=$PATH:$HOME/anaconda3/bin
+echo "After conda installation, content of [$HOME/anaconda3]"
 ls -alh $HOME/anaconda3
-alias $HOME/anaconda3/anaconda
+ls -alh $HOME/anaconda3/bin
+ls -alh $HOME/anaconda3/condabin
+
+# alias conda=$HOME/anaconda3/condabin
 conda --version
 which conda
 echo "# -----------"
