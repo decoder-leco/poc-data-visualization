@@ -26,7 +26,8 @@ EOF
 # But we want sweeties, so...:
 # https://github.com/deathbeds/jupyterlab-deck
 # conda install -y -c conda-forge jupyterlab-deck # even with the above symlink, i don't think that any conda install command would change anything to the jupyter lab
-python -m pip install jupyterlab-deck
+apt-get install -y git git-flow
+python -m pip install jupyterlab-deck jupyterlab-git
 
 R --version
 Rscript --version
