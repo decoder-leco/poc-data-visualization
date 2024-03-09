@@ -22,10 +22,11 @@ EOF
 
 # --- 
 # the symlink so that anaconda thinks its him who installed jupyter...?
-ln -s /usr/local/bin/jupyter ${HOME}/anaconda3/bin/jupyter
+# ln -s /usr/local/bin/jupyter ${HOME}/anaconda3/bin/jupyter
 # But we want sweeties, so...:
 # https://github.com/deathbeds/jupyterlab-deck
-conda install -y -c conda-forge jupyterlab-deck
+# conda install -y -c conda-forge jupyterlab-deck # even with the above symlink, i don't think that any conda install command would change anything to the jupyter lab
+python -m pip install jupyterlab-deck
 
 R --version
 Rscript --version
