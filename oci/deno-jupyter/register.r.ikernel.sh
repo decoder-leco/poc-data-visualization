@@ -17,8 +17,13 @@ EOF
 # source ~/.bashrc && conda install -y -c conda-forge @techrah/text-shortcuts
 # conda install -y -c conda-forge @techrah/text-shortcuts
 # ---
+
+# --- 
+# the symlink so that anaconda thinks its him who installed jupyter...?
+ln -s /usr/local/bin/jupyter ${HOME}/anaconda3/bin/jupyter
 # But we want sweeties, so...:
-conda install -c conda-forge jupyterlab-git
+# https://github.com/deathbeds/jupyterlab-deck
+conda install -y -c conda-forge jupyterlab-deck
 
 R --version
 Rscript --version
