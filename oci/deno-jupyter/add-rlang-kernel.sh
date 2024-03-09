@@ -32,7 +32,7 @@ echo "  CONDA_INSTALLER_FILENAME=[${CONDA_INSTALLER_FILENAME}]"
 curl -LO https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 export CONDA_INSTALLER_CHECKSUM_SHA256="b978856ec3c826eb495b60e3fffe621f670c101150ebcbdeede4f961f22dc438"
 
-echo "${CONDA_INSTALLER_CHECKSUM_SHA256} ${CONDA_INSTALLER_FILENAME}" | ./conda.sha256.checksum
+echo "${CONDA_INSTALLER_CHECKSUM_SHA256} ${CONDA_INSTALLER_FILENAME}" | tee -a ./conda.sha256.checksum
 sha256sum -c ./conda.sha256.checksum
 # https://stackoverflow.com/questions/49865531/bash-script-for-anaconda-installer-and-license-agreement
 mkdir -p $HOME/anaconda3
