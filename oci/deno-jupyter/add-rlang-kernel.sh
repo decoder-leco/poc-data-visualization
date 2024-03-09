@@ -50,7 +50,7 @@ echo "# -----------"
 echo " Content of bashrc after conda installation:"
 cat ~/.bashrc
 echo "# -----------"
-echo "export PATH=\"\$PATH:\$(which conda)\"" | tee -a ~/.bashrc
+echo "export PATH=\"\$PATH:\$HOME/anaconda3/bin\"" | tee -a ~/.bashrc
 echo " Content of bashrc after conda installation + update:"
 cat ~/.bashrc
 echo "# -----------"
