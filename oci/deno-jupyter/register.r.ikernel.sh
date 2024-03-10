@@ -38,7 +38,7 @@ EOF
 # - first uninstall conda packages previously installed:
 # conda install -y -c r r-irkernel
 # CONDA HELP: Use `--all` flag to remove all packages and the environment itself.
-conda remove -y --all
+conda remove -y -f --all
 
 export DESIRED_R_VERSION="4.3.3"
 apt-get update --yes && \
