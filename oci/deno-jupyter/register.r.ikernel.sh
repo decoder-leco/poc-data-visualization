@@ -40,7 +40,8 @@ apt-get install -y git git-flow
 # CONDA HELP: Use `--all` flag to remove all packages and the environment itself.
 # conda remove -y -f --all
 
-export DESIRED_R_VERSION="4.3.3"
+# export DESIRED_R_VERSION=${DESIRED_R_VERSION:-"4.3.3"}
+export DESIRED_R_VERSION=${DESIRED_R_VERSION:-"4.3.1"}
 apt-get update --yes && \
     apt-get install --yes --no-install-recommends \
     fonts-dejavu \
@@ -51,8 +52,8 @@ apt-get update --yes && \
     gcc && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# conda install --yes \
-conda install --yes -f -c conda-forge \
+# conda install --yes -f -c conda-forge \
+conda install --yes \
     "r-base=${DESIRED_R_VERSION}" \
     'r-caret' \
     'r-crayon' \
