@@ -27,6 +27,8 @@ EOF
 # https://github.com/deathbeds/jupyterlab-deck
 # conda install -y -c conda-forge jupyterlab-deck # even with the above symlink, i don't think that any conda install command would change anything to the jupyter lab
 apt-get install -y git git-flow
+# --- about [libxrender1], see https://github.com/decoder-leco/poc-data-visualization/issues/9#issuecomment-1987203379
+apt-get install -y libxrender1
 python -m pip install jupyterlab-deck jupyterlab-git
 
 R --version

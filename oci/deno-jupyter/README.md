@@ -518,3 +518,17 @@ inspect(
     </>
 );
 ```
+
+
+```bash
+Error in dev.control(displaylist = "enable") :
+dev.control() called without an open graphics device
+Calls: <Anonymous> ... tryCatch -> tryCatchList -> evaluate -> dev.control
+In addition: Warning messages:
+1: In ok_device(filename, ...) :
+unable to load shared object '/root/anaconda3/lib/R/library/grDevices/libs//cairo.so':
+libXrender.so.1: cannot open shared object file: No such file or directory
+2: In ok_device(filename, ...) : failed to load cairo DLL
+Execution halted
+
+```
