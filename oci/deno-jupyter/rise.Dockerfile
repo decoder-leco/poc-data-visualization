@@ -6,7 +6,7 @@
 #
 # https://hub.docker.com/layers/library/python/3.13.0a4-slim-bookworm/images/sha256-225ac4a4b47349833efc94d61b93c8784279341aff99e714f6ca455ca9232509?context=explore
 # ARG BASE_IMAGE=python:3.13.0a4-slim-bookworm
-ARG BASE_IMAGE=python:3.10-slim
+ARG BASE_IMAGE=decoderleco/deno-jupyter:0.0.1-alpha
 
 FROM $BASE_IMAGE as build
 
@@ -56,7 +56,7 @@ RUN bash -c 'source ~/.bashrc && deno jupyter --unstable --install' && \
 RUN mkdir -p $DATAVIZ_NOTEBOOKS_HOME
 
 
-FROM build as deno_runner
+FROM build as runner
 
 RUN mkdir -p /run
 
@@ -64,28 +64,9 @@ RUN mkdir -p /run
 COPY start.sh .
 RUN chmod +x ./start.sh && mv ./start.sh /run
 
-COPY start.debug.sh .
-RUN chmod +x ./start.debug.sh && mv ./start.debug.sh /run
-
-
 # CMD [ "jupyter", "notebook" ]
 
 WORKDIR /usr/dataviz/notebooks/decoderleco
 EXPOSE 8888
-
-# CMD [ "/run/start.sh" ]
-CMD [ "/run/start.debug.sh" ]
-
-
-FROM deno_runner as add_r_kernel
-
-RUN mkdir -p /kernels/extras/ && mkdir -p /kernels/ops/ 
-
-WORKDIR /kernels/ops/
-COPY add-rlang-kernel.sh .
-RUN chmod +x ./add-rlang-kernel.sh && ./add-rlang-kernel.sh
-RUN bash -c 'echo "in docker build, check conda install:" && source ~/.bashrc && conda --version && Rscript --version && R --version'
-COPY ./register.r.ikernel.sh .
-RUN chmod +x ./register.r.ikernel.sh && ./register.r.ikernel.sh
-
-WORKDIR /usr/dataviz/notebooks/decoderleco
+# CMD [ "jupyter", "notebook", "--unstable" ]
+CMD [ "/run/start.sh" ]

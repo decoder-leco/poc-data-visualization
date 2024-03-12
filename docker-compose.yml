@@ -13,7 +13,34 @@ services:
 #     networks:
 #       - dataviz_poc_net
 
+  jupyter_deno_rise:
+    image: decoderleco/deno-jupyter-rise:0.0.1-alpha
+    build:
+      context: ./oci/deno-jupyter/
+      dockerfile: rise.Dockerfile
+      # dockerfile: prod.Dockerfile
+      args:
+        DATAVIZ_NOTEBOOKS_HOME: /usr/dataviz/notebooks/decoderleco
+    volumes:
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+      - $PWD/notebooks:/usr/dataviz/notebooks/decoderleco:rw
+    restart: always
+    stdin_open: true 
+    tty: true
+    environment:
+      - DATAVIZ_NOTEBOOKS_HOME=/usr/dataviz/notebooks/decoderleco
+    ports:
+        - '0.0.0.0:8889:8888'
+    networks:
+      dataviz_poc_net:
+        aliases:
+          - api.dataviz_poc.io
+          - dataviz_poc.io
+    depends_on:
+      - mongodb
   jupyter_deno:
+    image: decoderleco/deno-jupyter:0.0.1-alpha
     build:
       context: ./oci/deno-jupyter/
       dockerfile: Dockerfile
@@ -21,7 +48,10 @@ services:
       args:
         DATAVIZ_NOTEBOOKS_HOME: /usr/dataviz/notebooks/decoderleco
     volumes:
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
       - $PWD/notebooks:/usr/dataviz/notebooks/decoderleco:rw
+      - jupyter_deno_cache:/root/.cache/deno:rw
     restart: always
     stdin_open: true 
     tty: true
@@ -55,6 +85,8 @@ services:
       #      mongodb://mongo.dataviz_poc.io:27017/
       # --- 
     volumes:
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
       - dataviz_poc_mongo_data:/data/db
     networks:
       dataviz_poc_net:
@@ -81,7 +113,7 @@ services:
 volumes:
   dataviz_poc_mongo_data:
   dataviz_poc_postgres_data:
-
+  jupyter_deno_cache:
 networks:
   dataviz_poc_net:
     driver: bridge
