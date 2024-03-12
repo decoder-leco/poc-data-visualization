@@ -40,8 +40,9 @@ apt-get install -y git git-flow
 # CONDA HELP: Use `--all` flag to remove all packages and the environment itself.
 # conda remove -y -f --all
 
-# export DESIRED_R_VERSION=${DESIRED_R_VERSION:-"4.3.3"}
-export DESIRED_R_VERSION=${DESIRED_R_VERSION:-"4.3.1"}
+# export DESIRED_CONDA_R_BASE_VERSION=${DESIRED_CONDA_R_BASE_VERSION:-"4.3.3"}
+# 4.3.1 is latest available version in the 'r' conda channel, according https://anaconda.org/search?q=r-base
+export DESIRED_CONDA_R_BASE_VERSION=${DESIRED_CONDA_R_BASE_VERSION:-"4.3.1"} # installing 4.3.1 version, i still ended up with a 4.2.2 version of R ....
 apt-get update --yes && \
     apt-get install --yes --no-install-recommends \
     fonts-dejavu \
@@ -52,9 +53,22 @@ apt-get update --yes && \
     gcc && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
+# --- ajout jb, pour debug résolution dépendances decoderleco:
+apt-get install --yes \
+  libcurl4-openssl-dev \
+  libudunits2-dev \
+  libfreetype6-dev \
+  libpng-dev \
+  libtiff5-dev \
+  libharfbuzz-dev \
+  libfribidi-dev \
+  libfontconfig1-dev
+
+
+
 # conda install --yes -f -c conda-forge \
 conda install --yes \
-    "r-base=${DESIRED_R_VERSION}" \
+    "r-base=${DESIRED_CONDA_R_BASE_VERSION}" \
     'r-caret' \
     'r-crayon' \
     'r-devtools' \
