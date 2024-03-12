@@ -56,7 +56,7 @@ RUN bash -c 'source ~/.bashrc && deno jupyter --unstable --install' && \
 RUN mkdir -p $DATAVIZ_NOTEBOOKS_HOME
 
 
-FROM build as runner
+FROM build as deno_runner
 
 RUN mkdir -p /run
 
@@ -64,9 +64,28 @@ RUN mkdir -p /run
 COPY start.sh .
 RUN chmod +x ./start.sh && mv ./start.sh /run
 
+COPY start.debug.sh .
+RUN chmod +x ./start.debug.sh && mv ./start.debug.sh /run
+
+
 # CMD [ "jupyter", "notebook" ]
 
 WORKDIR /usr/dataviz/notebooks/decoderleco
 EXPOSE 8888
-# CMD [ "jupyter", "notebook", "--unstable" ]
-CMD [ "/run/start.sh" ]
+
+# CMD [ "/run/start.sh" ]
+CMD [ "/run/start.debug.sh" ]
+
+
+FROM deno_runner as add_r_kernel
+
+RUN mkdir -p /kernels/extras/ && mkdir -p /kernels/ops/ 
+
+WORKDIR /kernels/ops/
+COPY add-rlang-kernel.sh .
+RUN chmod +x ./add-rlang-kernel.sh && ./add-rlang-kernel.sh
+RUN bash -c 'echo "in docker build, check conda install:" && source ~/.bashrc && conda --version && Rscript --version && R --version'
+COPY ./register.r.ikernel.sh .
+RUN chmod +x ./register.r.ikernel.sh && ./register.r.ikernel.sh
+
+WORKDIR /usr/dataviz/notebooks/decoderleco
