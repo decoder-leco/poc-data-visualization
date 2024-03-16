@@ -62,8 +62,10 @@ apt-get install --yes \
   libtiff5-dev \
   libharfbuzz-dev \
   libfribidi-dev \
-  libfontconfig1-dev
+  libfontconfig1-dev \
+  libgdal-dev
 
+# libgdal-dev # to be able to install [gdal] R package 
 
 
 # conda install --yes -f -c conda-forge \
