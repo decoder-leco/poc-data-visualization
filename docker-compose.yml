@@ -52,6 +52,7 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - $PWD/notebooks:/usr/dataviz/notebooks/decoderleco:rw
       - jupyter_deno_cache:/root/.cache/deno:rw
+      - jupyter_r_packages_data:/usr/local/lib/R/site-library:rw
     restart: always
     stdin_open: true 
     tty: true
@@ -114,6 +115,7 @@ volumes:
   dataviz_poc_mongo_data:
   dataviz_poc_postgres_data:
   jupyter_deno_cache:
+  jupyter_r_packages_data:
 networks:
   dataviz_poc_net:
     driver: bridge
