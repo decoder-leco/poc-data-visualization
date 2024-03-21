@@ -36,6 +36,14 @@ RUN apt-get update -y && \
     curl -fsSL https://deno.land/install.sh | sh && \
     echo " >>>>>> OK INSTALL [DENO] COMPLETE "
 
+
+# Installation de vi et de ps (Nécessaire uniquement pour du debug)
+# TODO JG C 2024_03_22 : A mettre en commentaire lors de la mise en Prod sur Internet pour réduire la surface d'attaque
+RUN apt-get install -y vim && \
+    echo " >>>>>> OK INSTALL [vim] COMPLETE " && \
+    apt-get install -y procps && \
+    echo " >>>>>> OK INSTALL [procps] COMPLETE "
+
 #
 # Installation Rust
 #
@@ -106,6 +114,15 @@ RUN chmod +x ./start.sh && mv ./start.sh /run
 COPY start.debug.sh .
 RUN chmod +x ./start.debug.sh && mv ./start.debug.sh /run
 
+
+# Remplacer sh par bash pour bénéficier des touches UP/DOWN/LEFT/RIGHT dans le Terminal Jupyter
+
+# ATTENTION : Le ln -s doit être fait sur la MEME ligne que le mv, car sinon il n'y a plus de sh pour lancer le ln -s
+RUN mv /usr/bin/sh /usr/bin/sh_origin && ln -s /usr/bin/bash /usr/bin/sh 
+
+#
+# Lancer le Serveur Jupyter
+#
 
 WORKDIR /usr/dataviz/notebooks/decoderleco
 EXPOSE 8888
