@@ -13,11 +13,11 @@ services:
 #     networks:
 #       - dataviz_poc_net
 
-  jupyter_deno_rise:
-    image: decoderleco/deno-jupyter-rise:0.0.1-alpha
+  jupyter_deno_aarch64:
+    image: decoderleco/deno-jupyter:0.0.1-alpha
     build:
-      context: ./oci/deno-jupyter/
-      dockerfile: rise.Dockerfile
+      context: ./oci/deno-jupyter-aarch64/
+      dockerfile: Dockerfile
       # dockerfile: prod.Dockerfile
       args:
         DATAVIZ_NOTEBOOKS_HOME: /usr/dataviz/notebooks/decoderleco
@@ -25,13 +25,15 @@ services:
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
       - $PWD/notebooks:/usr/dataviz/notebooks/decoderleco:rw
+      - jupyter_deno_cache:/root/.cache/deno:rw
+      - jupyter_r_packages_data:/usr/local/lib/R/site-library:rw
     restart: always
     stdin_open: true 
     tty: true
     environment:
       - DATAVIZ_NOTEBOOKS_HOME=/usr/dataviz/notebooks/decoderleco
     ports:
-        - '0.0.0.0:8889:8888'
+        - '0.0.0.0:8888:8888'
     networks:
       dataviz_poc_net:
         aliases:
