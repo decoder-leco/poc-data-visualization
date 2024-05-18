@@ -115,10 +115,10 @@ RUN mkdir -p /run
 
 USER root
 COPY start.sh .
-RUN chmod +x ./start.sh && mv ./start.sh /run
+RUN chmod a+x ./start.sh && mv ./start.sh /run
 
 COPY start.debug.sh .
-RUN chmod +x ./start.debug.sh && mv ./start.debug.sh /run
+RUN chmod a+x ./start.debug.sh && mv ./start.debug.sh /run
 
 
 # CMD [ "jupyter", "notebook" ]
@@ -142,10 +142,10 @@ RUN mkdir -p /kernels/extras/ && mkdir -p /kernels/ops/
 
 WORKDIR /kernels/ops/
 COPY add-rlang-kernel.sh .
-RUN chmod +x ./add-rlang-kernel.sh && ./add-rlang-kernel.sh
+RUN chmod a+x ./add-rlang-kernel.sh && ./add-rlang-kernel.sh
 RUN bash -c 'echo "in docker build, check conda install:" && source ~/.bashrc && conda --version && Rscript --version && R --version'
 COPY ./register.r.ikernel.sh .
-RUN chmod +x ./register.r.ikernel.sh && ./register.r.ikernel.sh
+RUN chmod a+x ./register.r.ikernel.sh && ./register.r.ikernel.sh
 
 # WORKDIR /usr/dataviz/notebooks/decoderleco
 WORKDIR ${HOME}
