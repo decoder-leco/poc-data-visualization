@@ -151,7 +151,11 @@ RUN export PATH="$PATH:$HOME/anaconda3/bin" && \
     bash -c 'echo "in docker build, check conda install:" && source ~/.bashrc && conda --version && Rscript --version && R --version'
 # RUN bash -c 'echo "in docker build, check conda install:" && source ~/.bashrc && conda --version && Rscript --version && R --version'
 COPY ./register.r.ikernel.sh .
-RUN chmod a+x ./register.r.ikernel.sh && ./register.r.ikernel.sh
+# RUN chmod a+x ./register.r.ikernel.sh && ./register.r.ikernel.sh
+USER root
+RUN chmod a+x ./register.r.ikernel.sh
+USER ${NB_USER}
+RUN ./register.r.ikernel.sh
 
 # WORKDIR /usr/dataviz/notebooks/decoderleco
 WORKDIR ${HOME}
