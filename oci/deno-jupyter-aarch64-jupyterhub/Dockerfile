@@ -36,8 +36,11 @@ RUN adduser \
 
 RUN apt-get update -y && \
     echo " >>>>>> OK UPDATE COMPLETE " && \
-    apt-get install -y tini && \
-    echo " >>>>>> OK INSTALL [tini] COMPLETE " && \
+    apt-get install -y tini \
+    ca-certificates \
+    dnsutils \
+    iputils-ping && \
+    echo " >>>>>> OK INSTALL [tini ca-certificates dnsutils iputils-ping] COMPLETE " && \
     apt-get install -y curl && \
     echo " >>>>>> OK INSTALL [curl] COMPLETE " && \
     apt-get install -y jq && \
@@ -45,20 +48,27 @@ RUN apt-get update -y && \
     apt-get install -y build-essential && \
     echo " >>>>>> OK INSTALL [build-essential] COMPLETE " && \
     apt-get install -y unzip && \
-    echo " >>>>>> OK INSTALL [unzip] COMPLETE " && \
-    curl -fsSL https://deno.land/install.sh | sh && \
-    echo " >>>>>> OK INSTALL [DENO] COMPLETE "
+    echo " >>>>>> OK INSTALL [unzip] COMPLETE "
+
+USER ${NB_USER}
+
+# RUN curl -fsSL https://deno.land/install.sh | sh && \
+#     echo " >>>>>> OK INSTALL [DENO] COMPLETE "
 RUN echo " >>>>>> start rust install" && curl https://sh.rustup.rs -sSf | sh -s -- -y && \
     echo " >>>>>> OK INSTALL [RUST +CARGO] COMPLETE "
 RUN echo "export PATH=\"\$PATH:\$HOME/.cargo/bin\"" | tee -a ~/.shrc | tee -a ~/.bashrc && bash -c 'source "$HOME/.cargo/env"'
 RUN ls $HOME/.cargo/bin
 RUN export PATH="$PATH:$HOME/.cargo/bin" && cargo --version
+
+USER root
 RUN apt-get install -y build-essential libssl-dev libffi-dev libzmq3-dev
 # >> reparations
 # RUN apt-get install -y build-essential libssl-dev libffi-dev libzmq3-dev && apt-get install -y --fix-broken
-RUN apt-get install -y build-essential libssl-dev libffi-dev libzmq3-dev
+
 
 # RUN export PATH="$PATH:$HOME/.cargo/bin" && export PIP_DEFAULT_TIMEOUT=200 && python --version && python -m pip install pyzmq --trusted-host pypi.org --trusted-host files.pythonhosted.org
+
+USER ${NB_USER}
 
 WORKDIR /app
 COPY requirements.txt /app
@@ -69,7 +79,7 @@ RUN export PATH="$PATH:$HOME/.cargo/bin" && export PIP_DEFAULT_TIMEOUT=200 && pi
 RUN export PATH="$PATH:$HOME/.cargo/bin" && export PIP_DEFAULT_TIMEOUT=200 && pip install jupyterlab notebook && \
     echo " >>>>>> OK INSTALL [pip install jupyterlab notebook] COMPLETE "
 RUN curl -fsSL https://deno.land/install.sh | sh && \
-    echo 'export DENO_INSTALL="/root/.deno"' | tee -a ~/.bashrc | tee -a ~/.shrc && \
+    echo "export DENO_INSTALL='/home/${NB_USER}/.deno'" | tee -a ~/.bashrc | tee -a ~/.shrc && \
     echo 'export PATH="$DENO_INSTALL/bin:$PATH"' | tee -a ~/.bashrc | tee -a ~/.shrc && \
     echo " >>>>>> OK INSTALL [DENO] COMPLETE "
 RUN bash -c 'source ~/.bashrc && deno jupyter --unstable --install' && \
