@@ -83,8 +83,9 @@ RUN curl -fsSL https://deno.land/install.sh | sh && \
     ls -alh /home/${NB_USER}/.deno && \
     ls -alh /home/${NB_USER}/.deno/bin && \
     ls -alh /home/${NB_USER}/.deno/bin/deno && \
-    /home/${NB_USER}/.deno/bin/deno --version && \
-    echo "export DENO_INSTALL='/home/${NB_USER}/.deno'" | tee -a ~/.bashrc | tee -a ~/.shrc && \
+    /home/${NB_USER}/.deno/bin/deno --version
+RUN /home/${NB_USER}/.deno/bin/deno --version
+RUN echo "export DENO_INSTALL='/home/${NB_USER}/.deno'" | tee -a ~/.bashrc | tee -a ~/.shrc && \
     echo 'export PATH="$DENO_INSTALL/bin:$PATH"' | tee -a ~/.bashrc | tee -a ~/.shrc && \
     echo " >>>>>> OK INSTALL [DENO] COMPLETE "
 RUN bash -c 'source ~/.bashrc && deno jupyter --unstable --install' && \
