@@ -151,8 +151,11 @@ RUN export PATH="$PATH:$HOME/anaconda3/bin" && \
     bash -c 'echo "in docker build, check conda install:" && source ~/.bashrc && conda --version && Rscript --version && R --version'
 # RUN bash -c 'echo "in docker build, check conda install:" && source ~/.bashrc && conda --version && Rscript --version && R --version'
 COPY ./register.r.ikernel.sh .
+COPY ./register.i.rkernel.requirements.sh .
 # RUN chmod a+x ./register.r.ikernel.sh && ./register.r.ikernel.sh
 USER root
+RUN chmod a+x ./register.i.rkernel.requirements.sh
+RUN ./register.i.rkernel.requirements.sh
 RUN chmod a+x ./register.r.ikernel.sh
 USER ${NB_USER}
 RUN export PATH="$PATH:$HOME/anaconda3/bin" && \
