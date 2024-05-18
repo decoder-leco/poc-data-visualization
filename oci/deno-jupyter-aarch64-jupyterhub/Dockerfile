@@ -83,7 +83,7 @@ RUN pip install notebook
 RUN pip install jupyterlab
 # RUN pip install jupyterlab > ./jupyter.install.logs
 # RUN cat -n ./jupyter.install.logs
-RUN bash -c 'jupyter --version'
+RUN bash -c 'export PATH="$HOME/.local/bin:$PATH" && jupyter --version'
 RUN jupyterlab --version
 RUN jupyter-lab --version
 RUN jupyter --version
