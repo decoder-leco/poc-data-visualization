@@ -1,6 +1,10 @@
 #/bin/bash
+
+source ~/.bashrc
+
+
 # Linux packages required to install [jupyterlab-deck jupyterlab-git] Jupyter lab extensions
-apt-get install -y git git-flow
+apt-get update --yes && apt-get install -y git git-flow
 # Linux packages required to install R IKernel
 apt-get update --yes && \
     apt-get install --yes --no-install-recommends \
@@ -13,6 +17,7 @@ apt-get update --yes && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # --- ajout jb, pour debug résolution dépendances decoderleco:
+apt-get update --yes && \
 apt-get install --yes \
   libcurl4-openssl-dev \
   libudunits2-dev \
