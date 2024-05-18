@@ -12,11 +12,41 @@ services:
 #       - mongodb
 #     networks:
 #       - dataviz_poc_net
+  jupyterhub_deno_aarch64:
+    image: decoderleco/r-deno-py-jupyter:0.0.1-alpha-aarch64-hub
+    build:
+      context: ./oci/deno-jupyter-aarch64-jupyterhub/
+      dockerfile: Dockerfile
+      # dockerfile: prod.Dockerfile
+      args:
+        # DATAVIZ_NOTEBOOKS_HOME: /usr/dataviz/notebooks/decoderleco
+        NB_USER: jovyan
+        NB_UID: 1000
+    volumes:
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+      - $PWD/notebooks:/usr/dataviz/notebooks/decoderleco:rw
+      - jupyter_deno_cache:/root/.cache/deno:rw
+      - jupyter_r_packages_data:/usr/local/lib/R/site-library:rw
+    restart: always
+    stdin_open: true 
+    tty: true
+    environment:
+      - DATAVIZ_NOTEBOOKS_HOME=/usr/dataviz/notebooks/decoderleco
+    ports:
+        - '0.0.0.0:8889:8888'
+    networks:
+      dataviz_poc_net:
+        aliases:
+          - api.hubdataviz_poc.io
+          - hubdataviz_poc.io
+    depends_on:
+      - mongodb
 
   jupyter_deno_aarch64:
     image: decoderleco/deno-jupyter:0.0.1-alpha-aarch64
     build:
-      context: ./oci/deno-jupyter-aarch64/
+      context: ./oci/deno-jupyter-aarch64-jupyterhub/
       dockerfile: Dockerfile
       # dockerfile: prod.Dockerfile
       args:
@@ -61,7 +91,7 @@ services:
     environment:
       - DATAVIZ_NOTEBOOKS_HOME=/usr/dataviz/notebooks/decoderleco
     ports:
-        - '0.0.0.0:8888:8888'
+        - '0.0.0.0:8887:8888'
     networks:
       dataviz_poc_net:
         aliases:
