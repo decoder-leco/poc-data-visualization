@@ -78,6 +78,7 @@ RUN export PATH="$PATH:$HOME/.cargo/bin" && export PIP_DEFAULT_TIMEOUT=200 && pi
 
 RUN export PATH="$PATH:$HOME/.cargo/bin" && export PIP_DEFAULT_TIMEOUT=200 && pip install jupyterlab notebook && \
     echo " >>>>>> OK INSTALL [pip install jupyterlab notebook] COMPLETE "
+RUN jupyter --version
 RUN curl -fsSL https://deno.land/install.sh | sh && \
     echo "DENO_INSTALL=[/home/${NB_USER}/.deno]" && \
     ls -alh /home/${NB_USER}/.deno && \
