@@ -115,6 +115,8 @@ CMD [ "/run/start.debug.sh" ]
 
 FROM deno_runner as add_r_kernel
 
+USER root
+
 RUN mkdir -p /kernels/extras/ && mkdir -p /kernels/ops/ 
 
 WORKDIR /kernels/ops/
@@ -126,3 +128,4 @@ RUN chmod +x ./register.r.ikernel.sh && ./register.r.ikernel.sh
 
 # WORKDIR /usr/dataviz/notebooks/decoderleco
 WORKDIR ${HOME}
+USER ${NB_USER}
