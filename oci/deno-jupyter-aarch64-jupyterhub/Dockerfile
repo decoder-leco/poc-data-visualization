@@ -100,6 +100,7 @@ RUN echo "export DENO_INSTALL='/home/${NB_USER}/.deno'" | tee -a ~/.bashrc | tee
     echo " >>>>>> OK INSTALL [DENO] COMPLETE "
 RUN export DENO_INSTALL="/home/${NB_USER}/.deno" && \
     export PATH="$DENO_INSTALL/bin:$PATH" && \
+    export PATH="$HOME/.local/bin:$PATH" && \
     deno jupyter --unstable --install \
     echo " >>>>>> OK INSTALL [deno jupyter --unstable --install] COMPLETE "
 # RUN bash -c 'source ~/.bashrc && deno jupyter --unstable --install' && \
