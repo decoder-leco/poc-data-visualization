@@ -155,7 +155,8 @@ COPY ./register.r.ikernel.sh .
 USER root
 RUN chmod a+x ./register.r.ikernel.sh
 USER ${NB_USER}
-RUN ./register.r.ikernel.sh
+RUN export PATH="$PATH:$HOME/anaconda3/bin" && \
+    bash -c './register.r.ikernel.sh'
 
 # WORKDIR /usr/dataviz/notebooks/decoderleco
 WORKDIR ${HOME}
