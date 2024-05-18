@@ -159,6 +159,7 @@ RUN ./register.i.rkernel.requirements.sh
 RUN chmod a+x ./register.r.ikernel.sh
 # USER ${NB_USER}
 RUN export PATH="$PATH:$HOME/anaconda3/bin" && \
+    export PATH="$HOME/.local/bin:$PATH" && \
     bash -c './register.r.ikernel.sh'
 
 # WORKDIR /usr/dataviz/notebooks/decoderleco
