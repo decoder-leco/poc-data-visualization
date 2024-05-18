@@ -83,6 +83,9 @@ RUN pip install notebook
 RUN pip install jupyterlab
 # RUN pip install jupyterlab > ./jupyter.install.logs
 # RUN cat -n ./jupyter.install.logs
+RUN jupyter-lab --version
+RUN jupyterlab --version
+RUN bash -c 'jupyter --version'
 RUN jupyter --version
 RUN which jupyter
 RUN curl -fsSL https://deno.land/install.sh | sh && \
