@@ -91,6 +91,7 @@ RUN curl -fsSL https://deno.land/install.sh | sh && \
 RUN /home/${NB_USER}/.deno/bin/deno --version
 RUN ${HOME}/.deno/bin/deno --version
 RUN ~/.deno/bin/deno --version
+RUN export DENO_INSTALL='/home/${NB_USER}/.deno && export PATH="$DENO_INSTALL/bin:$PATH" && deno --version 
 RUN bash -c "alias deno='~/.deno/bin/deno' && deno --version"
 RUN echo "export DENO_INSTALL='/home/${NB_USER}/.deno'" | tee -a ~/.bashrc | tee -a ~/.shrc && \
     echo 'export PATH="$DENO_INSTALL/bin:$PATH"' | tee -a ~/.bashrc | tee -a ~/.shrc && \
