@@ -113,7 +113,7 @@ FROM build as deno_runner
 
 RUN mkdir -p /run
 
-
+USER root
 COPY start.sh .
 RUN chmod +x ./start.sh && mv ./start.sh /run
 
