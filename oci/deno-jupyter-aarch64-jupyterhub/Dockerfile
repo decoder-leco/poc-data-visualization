@@ -80,7 +80,8 @@ RUN export PATH="$PATH:$HOME/.cargo/bin" && export PIP_DEFAULT_TIMEOUT=200 && pi
     echo " >>>>>> OK INSTALL [pip install jupyterlab notebook] COMPLETE "
 USER root
 RUN pip install notebook
-RUN pip install jupyterlab
+RUN pip install jupyterlab > ./jupyter.logs
+RUN cat -n ./jupyter.logs
 RUN jupyter --version
 RUN which jupyter
 RUN curl -fsSL https://deno.land/install.sh | sh && \
