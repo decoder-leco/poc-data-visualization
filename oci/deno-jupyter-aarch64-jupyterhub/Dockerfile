@@ -78,7 +78,7 @@ RUN export PATH="$PATH:$HOME/.cargo/bin" && export PIP_DEFAULT_TIMEOUT=200 && pi
 
 RUN export PATH="$PATH:$HOME/.cargo/bin" && export PIP_DEFAULT_TIMEOUT=200 && pip install jupyterlab notebook && \
     echo " >>>>>> OK INSTALL [pip install jupyterlab notebook] COMPLETE "
-USER root
+# USER root
 RUN pip install notebook
 RUN pip install jupyterlab > ./jupyter.install.logs
 RUN cat -n ./jupyter.logs
