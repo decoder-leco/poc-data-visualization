@@ -39,6 +39,7 @@ sha256sum -c ./conda.sha256.checksum
 mkdir -p $HOME/anaconda3
 bash ${CONDA_INSTALLER_FILENAME} -b -f -p $HOME/anaconda3
 export PATH=$PATH:$HOME/anaconda3/bin
+
 echo "After conda installation, content of [$HOME/anaconda3]"
 ls -alh $HOME/anaconda3
 ls -alh $HOME/anaconda3/bin
