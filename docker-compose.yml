@@ -46,7 +46,7 @@ services:
   jupyter_deno_aarch64:
     image: decoderleco/deno-jupyter:0.0.1-alpha-aarch64
     build:
-      context: ./oci/deno-jupyter-aarch64-jupyterhub/
+      context: ./oci/deno-jupyter-aarch64/
       dockerfile: Dockerfile
       # dockerfile: prod.Dockerfile
       args:
