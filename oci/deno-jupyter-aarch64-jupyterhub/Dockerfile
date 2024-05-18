@@ -147,9 +147,9 @@ RUN chmod a+x ./add-rlang-kernel.sh
 RUN chown ${NB_USER}: -R .
 USER ${NB_USER}
 RUN ./add-rlang-kernel.sh
-# RUN export PATH="$PATH:/home/jovyan/anaconda3/bin/conda:/home/jovyan/anaconda3/bin/" && \
-#     bash -c 'echo "in docker build, check conda install:" && source ~/.bashrc && conda --version && Rscript --version && R --version'
-RUN bash -c 'echo "in docker build, check conda install:" && source ~/.bashrc && conda --version && Rscript --version && R --version'
+RUN export PATH="$PATH:$HOME/anaconda3/bin" && \
+    bash -c 'echo "in docker build, check conda install:" && source ~/.bashrc && conda --version && Rscript --version && R --version'
+# RUN bash -c 'echo "in docker build, check conda install:" && source ~/.bashrc && conda --version && Rscript --version && R --version'
 COPY ./register.r.ikernel.sh .
 RUN chmod a+x ./register.r.ikernel.sh && ./register.r.ikernel.sh
 
