@@ -93,6 +93,7 @@ RUN ${HOME}/.deno/bin/deno --version
 RUN echo "export DENO_INSTALL='/home/${NB_USER}/.deno'" | tee -a ~/.bashrc | tee -a ~/.shrc && \
     echo 'export PATH="$DENO_INSTALL/bin:$PATH"' | tee -a ~/.bashrc | tee -a ~/.shrc && \
     echo 'export PATH="$HOME/.local/bin:$PATH"' | tee -a ~/.bashrc | tee -a ~/.shrc && \
+    echo 'alias deno=~/.deno/bin/deno' | tee -a ~/.bashrc | tee -a ~/.shrc && \
     echo " >>>>>> OK INSTALL [DENO] COMPLETE "
 RUN bash -c 'source ~/.bashrc && deno jupyter --unstable --install' && \
     echo " >>>>>> OK INSTALL [deno jupyter --unstable --install] COMPLETE "
