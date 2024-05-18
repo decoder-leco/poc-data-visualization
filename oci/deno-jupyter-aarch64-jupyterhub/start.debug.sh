@@ -6,8 +6,24 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH=$PATH:$HOME/anaconda3/bin
 
-source ~/.bashrc
+# source ~/.bashrc
 
+echo "# --- # --- # --- # --- # --- # --- "
+echo "# --- # --- # --- # --- # --- # --- "
+echo "# --- Cheking executables"
+ls -alh /home/${NB_USER}/.deno/bin/deno
+/home/${NB_USER}/.deno/bin/deno --version
+ls -alh $HOME/anaconda3/bin/conda
+$HOME/anaconda3/bin/conda --version
+ls -alh /home/${NB_USER}/.cargo/bin/cargo
+/home/${NB_USER}/.cargo/bin/cargo --version
+
+alias cargo="/home/${NB_USER}/.cargo/bin/cargo"
+alias conda="$HOME/anaconda3/bin/conda"
+alias deno="/home/${NB_USER}/.deno/bin/deno"
+
+echo "# --- # --- # --- # --- # --- # --- "
+echo "# --- # --- # --- # --- # --- # --- "
 pwd
 
 cargo --version
