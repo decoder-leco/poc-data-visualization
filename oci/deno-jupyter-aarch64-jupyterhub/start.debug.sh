@@ -45,6 +45,8 @@ deno jupyter --install --unstable-ffi --unstable-fs # without [--unstable] which
 
 # jupyter lab --unstable=true --ip=0.0.0.0 --allow-root --NotebookApp.token='decoderleco' --NotebookApp.password='decoderleco'
 jupyter lab --unstable=true --ip=0.0.0.0 --NotebookApp.base_url="${JUPYTERHUB_SERVICE_PREFIX}"
+# jupyter lab --unstable=true --ip=0.0.0.0
+
 
 
 

@@ -119,7 +119,8 @@ RUN chmod a+x ./start.sh && mv ./start.sh /run
 
 COPY start.debug.sh .
 RUN chmod a+x ./start.debug.sh && mv ./start.debug.sh /run
-
+ARG JUPYTERHUB_SERVICE_PREFIX
+ENV JUPYTERHUB_SERVICE_PREFIX=$JUPYTERHUB_SERVICE_PREFIX
 
 # CMD [ "jupyter", "notebook" ]
 
