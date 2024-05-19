@@ -43,6 +43,7 @@ deno jupyter --install --unstable-ffi --unstable-fs # without [--unstable] which
 #      https://z2jh.jupyter.org/en/stable/resources/reference.html#singleuser-storage-homemountpath
 export NOTEBOOKS_DIR=${HOME}/workspace
 mkdir -p ${NOTEBOOKS_DIR}
+cd ${NOTEBOOKS_DIR}
 
 # OK # jupyter lab --unstable=true --ip=0.0.0.0 --allow-root --NotebookApp.token='decoderleco' --NotebookApp.password='decoderleco' --notebook-dir="$NOTEBOOKS_DIR"
 # KO # jupyter-lab: error: unrecognized arguments: --unstable-ffi=true --unstable-fs=true # jupyter lab --unstable=true --unstable-ffi=true --unstable-fs=true --ip=0.0.0.0 --allow-root --NotebookApp.token='decoderleco' --NotebookApp.password='decoderleco' --notebook-dir="$NOTEBOOKS_DIR"
