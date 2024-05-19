@@ -38,6 +38,12 @@ deno jupyter --install --unstable-ffi --unstable-fs # without [--unstable] which
 
 # tested works # jupyter notebook --unstable true --ip 0.0.0.0 --allow-root
 # export NOTEBOOKS_DIR=$DATAVIZ_NOTEBOOKS_HOME
+# -->> NOTEBOOKS_DIR must match Helm Chart's
+#      singleuser-storage-homemountpath
+#      https://z2jh.jupyter.org/en/stable/resources/reference.html#singleuser-storage-homemountpath
+export NOTEBOOKS_DIR=${HOME}/workspace
+mkdir -p ${NOTEBOOKS_DIR}
+
 # OK # jupyter lab --unstable=true --ip=0.0.0.0 --allow-root --NotebookApp.token='decoderleco' --NotebookApp.password='decoderleco' --notebook-dir="$NOTEBOOKS_DIR"
 # KO # jupyter-lab: error: unrecognized arguments: --unstable-ffi=true --unstable-fs=true # jupyter lab --unstable=true --unstable-ffi=true --unstable-fs=true --ip=0.0.0.0 --allow-root --NotebookApp.token='decoderleco' --NotebookApp.password='decoderleco' --notebook-dir="$NOTEBOOKS_DIR"
 # KO # jupyter-lab: error: unrecognized arguments: --unstable-ffi --unstable-fs # jupyter lab --unstable=true --unstable-ffi --unstable-fs --ip=0.0.0.0 --allow-root --NotebookApp.token='decoderleco' --NotebookApp.password='decoderleco' --notebook-dir="$NOTEBOOKS_DIR"
@@ -46,7 +52,7 @@ deno jupyter --install --unstable-ffi --unstable-fs # without [--unstable] which
 # jupyter lab --unstable=true --ip=0.0.0.0 --allow-root --NotebookApp.token='decoderleco' --NotebookApp.password='decoderleco'
 # KO # jupyter lab --unstable=true --ip=0.0.0.0 --NotebookApp.base_url="${JUPYTERHUB_SERVICE_PREFIX}"
 # --> [ --NotebookApp.token='' --NotebookApp.password=''] disables authentication
-jupyter lab --unstable=true --ip=0.0.0.0 --NotebookApp.base_url="${JUPYTERHUB_SERVICE_PREFIX}" --NotebookApp.token='' --NotebookApp.password=''
+jupyter lab --unstable=true --ip=0.0.0.0 --NotebookApp.base_url="${JUPYTERHUB_SERVICE_PREFIX}" --NotebookApp.token='' --NotebookApp.password='' --notebook-dir="$NOTEBOOKS_DIR"
 # jupyter lab --unstable=true --ip=0.0.0.0
 
 
