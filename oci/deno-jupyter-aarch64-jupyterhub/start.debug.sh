@@ -53,8 +53,9 @@ cd ${NOTEBOOKS_DIR}
 # jupyter lab --unstable=true --ip=0.0.0.0 --allow-root --NotebookApp.token='decoderleco' --NotebookApp.password='decoderleco'
 # KO # jupyter lab --unstable=true --ip=0.0.0.0 --NotebookApp.base_url="${JUPYTERHUB_SERVICE_PREFIX}"
 # --> [ --NotebookApp.token='' --NotebookApp.password=''] disables authentication
-jupyter lab --unstable=true --ip=0.0.0.0 --NotebookApp.base_url="${JUPYTERHUB_SERVICE_PREFIX}" --NotebookApp.token='' --NotebookApp.password='' --notebook-dir="$NOTEBOOKS_DIR"
-# jupyter lab --unstable=true --ip=0.0.0.0
+
+# OK mais pb pour logout # jupyter lab --unstable=true --ip=0.0.0.0 --NotebookApp.base_url="${JUPYTERHUB_SERVICE_PREFIX}" --NotebookApp.token='' --NotebookApp.password='' --notebook-dir="$NOTEBOOKS_DIR"
+jupyter lab --unstable=true --ip=0.0.0.0 --notebook-dir="$NOTEBOOKS_DIR"
 
 
 
