@@ -55,7 +55,8 @@ cd ${NOTEBOOKS_DIR}
 # --> [ --NotebookApp.token='' --NotebookApp.password=''] disables authentication
 
 # OK mais pb pour logout # jupyter lab --unstable=true --ip=0.0.0.0 --NotebookApp.base_url="${JUPYTERHUB_SERVICE_PREFIX}" --NotebookApp.token='' --NotebookApp.password='' --notebook-dir="$NOTEBOOKS_DIR"
-jupyter lab --unstable=true --ip=0.0.0.0 --notebook-dir="$NOTEBOOKS_DIR" --NotebookApp.base_url="${JUPYTERHUB_SERVICE_PREFIX}"
+jupyter lab --unstable=true --ip=0.0.0.0 --NotebookApp.base_url="${JUPYTERHUB_SERVICE_PREFIX}" --NotebookApp.token='' --NotebookApp.password='' --notebook-dir="$NOTEBOOKS_DIR"
+# celui le prob c'est que je reste bloqué sur page login # jupyter lab --unstable=true --ip=0.0.0.0 --notebook-dir="$NOTEBOOKS_DIR" --NotebookApp.base_url="${JUPYTERHUB_SERVICE_PREFIX}"
 # ça c'est la dernière possibilité sinon :
 # jupyter lab --unstable=true --ip=0.0.0.0 --notebook-dir="$NOTEBOOKS_DIR" --NotebookApp.base_url="${JUPYTERHUB_SERVICE_PREFIX}"
 
