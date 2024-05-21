@@ -37,8 +37,11 @@ ENV DEBIAN_FRONTEND=noninteractive
 # About NB_GID: https://github.com/jupyter/docker-stacks/blob/996fae1248fcdd583a6a85be1f753d09acce9e25/images/docker-stacks-foundation/Dockerfile#L13
 ARG NB_GID=100
 ENV NB_GID=$NB_GID
+ARG NB_USER=jovyan
+ARG NB_UID=1000
+
 ENV NB_USER=jovyan \
-    NB_UID=1000 \
+    NB_UID=$NB_UID \
     HOME=/home/jovyan
 RUN adduser \
         --disabled-password \
