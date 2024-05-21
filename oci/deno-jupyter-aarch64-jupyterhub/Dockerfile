@@ -33,6 +33,10 @@ RUN --mount=type=cache,target=${PIP_CACHE_DIR} \
 FROM python:3.11-slim-bullseye
 ENV DEBIAN_FRONTEND=noninteractive
 
+# ---
+# About NB_GID: https://github.com/jupyter/docker-stacks/blob/996fae1248fcdd583a6a85be1f753d09acce9e25/images/docker-stacks-foundation/Dockerfile#L13
+ARG NB_GID=100
+ENV NB_GID=$NB_GID
 ENV NB_USER=jovyan \
     NB_UID=1000 \
     HOME=/home/jovyan
