@@ -74,6 +74,13 @@ RUN --mount=type=cache,target=${PIP_CACHE_DIR} \
         --find-links=/tmp/wheels/ \
         -r /tmp/requirements.txt
 
+##########################################
+##########################################
+##### ADD Jupyterlab extension
+##########################################
+##########################################
+
+RUN python -m pip install jupyterlab-deck jupyterlab-git
 
 ##########################################
 ##########################################
