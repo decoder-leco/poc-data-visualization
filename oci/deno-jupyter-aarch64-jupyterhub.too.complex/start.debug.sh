@@ -1,8 +1,10 @@
 #!/bin/bash
 
+export PATH="$PATH:$HOME/.cargo/bin"
 export DENO_INSTALL="/home/${NB_USER}/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
+export PATH=$PATH:$HOME/anaconda3/bin
 
 # source ~/.bashrc
 
