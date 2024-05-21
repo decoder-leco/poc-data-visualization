@@ -50,6 +50,7 @@ RUN apt-get update \
         ca-certificates \
         curl \
         jq \
+        unzip \
         dnsutils \
         iputils-ping \
         tini \
