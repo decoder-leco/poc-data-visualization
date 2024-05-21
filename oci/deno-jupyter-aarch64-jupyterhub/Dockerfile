@@ -110,6 +110,11 @@ RUN export DENO_INSTALL="/home/${NB_USER}/.deno" && \
 ##########################################
 ##########################################
 
+# Copy a script that we will use to correct permissions after running certain commands
+# Ref. : https://github.com/jupyter/docker-stacks/blob/996fae1248fcdd583a6a85be1f753d09acce9e25/images/docker-stacks-foundation/Dockerfile#L57
+#        https://github.com/jupyter/docker-stacks/blob/996fae1248fcdd583a6a85be1f753d09acce9e25/images/docker-stacks-foundation/fix-permissions
+COPY fix-permissions /usr/local/bin/fix-permissions
+RUN chmod a+x /usr/local/bin/fix-permissions
 RUN chown ${NB_USER}: -R /home/${NB_USER} && \
     fix-permissions "/home/${NB_USER}"
 WORKDIR ${HOME}
