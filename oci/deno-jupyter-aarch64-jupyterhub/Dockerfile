@@ -48,6 +48,8 @@ RUN apt-get update \
  && apt-get upgrade --yes \
  && apt-get install --yes --no-install-recommends \
         ca-certificates \
+        curl \
+        jq \
         dnsutils \
         iputils-ping \
         tini \
