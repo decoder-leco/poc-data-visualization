@@ -115,7 +115,7 @@ RUN export DENO_INSTALL="/home/${NB_USER}/.deno" && \
 #        https://github.com/jupyter/docker-stacks/blob/996fae1248fcdd583a6a85be1f753d09acce9e25/images/docker-stacks-foundation/fix-permissions
 COPY fix-permissions /usr/local/bin/fix-permissions
 RUN chmod a+x /usr/local/bin/fix-permissions
-RUN chown ${NB_USER}: -R /home/${NB_USER} && \
+RUN chown ${NB_USER}:${NB_USER} -R /home/${NB_USER} && \
     fix-permissions "/home/${NB_USER}"
 RUN chmod a+x /home/${NB_USER}/.local/share/jupyter/runtime
 USER ${NB_USER}
