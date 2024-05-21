@@ -117,6 +117,8 @@ COPY fix-permissions /usr/local/bin/fix-permissions
 RUN chmod a+x /usr/local/bin/fix-permissions
 RUN chown ${NB_USER}: -R /home/${NB_USER} && \
     fix-permissions "/home/${NB_USER}"
+USER ${NB_USER}
+RUN fix-permissions "/home/${NB_USER}"
 WORKDIR ${HOME}
 USER ${NB_USER}
 
