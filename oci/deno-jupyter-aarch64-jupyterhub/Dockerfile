@@ -135,7 +135,8 @@ RUN chown ${NB_USER}:${NB_USER} -R /home/${NB_USER} && \
 # RUN chmod a+x /home/${NB_USER}/.local/share/jupyter/runtime
 USER ${NB_USER}
 RUN fix-permissions "/home/${NB_USER}"
-WORKDIR ${HOME}
+RUN mkdir ${HOME}/workspace
+WORKDIR ${HOME}/workspace
 USER ${NB_USER}
 
 EXPOSE 8888
