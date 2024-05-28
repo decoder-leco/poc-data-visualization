@@ -12,8 +12,15 @@ services:
 #       - mongodb
 #     networks:
 #       - dataviz_poc_net
+  jupyterhub_deno_aarch64_as_root:
+    image: decoderleco/py-deno-jupyter-as-root:0.0.1-alpha-aarch64-hub
+    # image: decoderleco/r-deno-py-jupyter:0.0.1-alpha-aarch64-hub
+    build:
+      context: ./oci/deno-jupyter-aarch64-jupyterhub/root/
+      dockerfile: Dockerfile
   jupyterhub_deno_aarch64:
-    image: decoderleco/r-deno-py-jupyter:0.0.1-alpha-aarch64-hub
+    image: decoderleco/py-deno-jupyter:0.0.1-alpha-aarch64-hub
+    # image: decoderleco/r-deno-py-jupyter:0.0.1-alpha-aarch64-hub
     build:
       context: ./oci/deno-jupyter-aarch64-jupyterhub/
       dockerfile: Dockerfile
